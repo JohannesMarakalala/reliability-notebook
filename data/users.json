@@ -2,8 +2,8 @@
   {
     "email": "johannes_marakalala@yahoo.com",
     "name": "Johannes Marakalala",
-    "salt": "Mm27uGcWoe8_lvMJF2B6ww==",
-    "pw_hash": "80e9470cc94f9b7c5a5d4b3d57852586e4db1d6d45735271128b0f94e3da3fb9",
+    "salt": "63817367ba5cb412353980435ac73f09",
+    "pw_hash": "b5fe37c1a249c8b1f397206f27152fc9bd2fd1a14bbae6222cff231d8dae5264",
     "role": "admin",
     "created_at": "2025-09-29T22:49:39"
   },
