@@ -10,16 +10,50 @@ import plotly.graph_objects as go
 import streamlit as st
 import streamlit as _st_internal  # keep an alias to the original module
 
-# ---- Simple beta gate ----
+# ---- Simple beta gate (robust) ----
+# Drop-in replacement for the current gate. Works on GitHub (secrets), env vars, or a safe default.
+import os, time
+import streamlit as st
+
+def _active_beta_code() -> str:
+    # Priority: Streamlit secrets > ENV var > default
+    s = ""
+    try:
+        s = (st.secrets.get("BETA_ACCESS_CODE") or "").strip()
+    except Exception:
+        s = ""
+    if not s:
+        s = (os.getenv("BETA_ACCESS_CODE") or "").strip()
+    return s or "VIGIL2025"
+
+# Optional bypass for your own testing (set BETA_BYPASS=1 in secrets or env)
+def _beta_bypass() -> bool:
+    try:
+        b = str(st.secrets.get("BETA_BYPASS", "")).strip()
+    except Exception:
+        b = ""
+    if not b:
+        b = (os.getenv("BETA_BYPASS") or "").strip()
+    return b in {"1", "true", "True", "YES", "yes"}
+
 if not st.session_state.get("beta_ok"):
-    code = st.text_input("Enter beta access code", type="password")
-    if st.button("Enter"):
-        if code.strip() == st.secrets.get("BETA_ACCESS_CODE", ""):
-            st.session_state.beta_ok = True
-            st.rerun()
-        else:
-            st.error("Invalid access code")
-    st.stop()
+    if _beta_bypass():
+        st.session_state["beta_ok"] = True
+    else:
+        with st.sidebar.form("beta_gate_form", clear_on_submit=False):
+            st.write("🔒 **Beta Access**")
+            code_in = st.text_input("Enter beta access code", type="password", key="beta_code").strip()
+            ok = st.form_submit_button("Unlock")
+        if ok:
+            if code_in == _active_beta_code():
+                st.session_state["beta_ok"] = True
+                st.success("Beta unlocked.")
+                st.experimental_rerun()
+            else:
+                st.error("Invalid access code.")
+                st.stop()
+        # First load / no submit yet → hold here
+        st.stop()
 # --------------------------
 
 try:
