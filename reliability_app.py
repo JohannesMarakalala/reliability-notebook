@@ -10,6 +10,18 @@ import plotly.graph_objects as go
 import streamlit as st
 import streamlit as _st_internal  # keep an alias to the original module
 
+# ---- Simple beta gate ----
+if not st.session_state.get("beta_ok"):
+    code = st.text_input("Enter beta access code", type="password")
+    if st.button("Enter"):
+        if code.strip() == st.secrets.get("BETA_ACCESS_CODE", ""):
+            st.session_state.beta_ok = True
+            st.rerun()
+        else:
+            st.error("Invalid access code")
+    st.stop()
+# --------------------------
+
 try:
     # If we're on a new version (st.rerun exists) but experimental_rerun doesn't,
     # alias it so existing code works without edits.
