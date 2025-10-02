@@ -8,25 +8,24 @@ import numpy as np
 import pandas as pd
 import plotly.graph_objects as go
 import streamlit as st
-import streamlit as _st_internal  # keep an alias to the original module
 
-# ---- Simple beta gate (robust) ----
-# Drop-in replacement for the current gate. Works on GitHub (secrets), env vars, or a safe default.
-import os, time
-import streamlit as st
+# =========================
+# Page config (must be early)
+# =========================
+st.set_page_config(page_title="VIGIL", layout="wide")
 
+# =========================
+# Robust Beta Gate (sidebar form, secrets/env fallback)
+# =========================
 def _active_beta_code() -> str:
-    # Priority: Streamlit secrets > ENV var > default
-    s = ""
     try:
-        s = (st.secrets.get("BETA_ACCESS_CODE") or "").strip()
+        v = (st.secrets.get("BETA_ACCESS_CODE") or "").strip()
     except Exception:
-        s = ""
-    if not s:
-        s = (os.getenv("BETA_ACCESS_CODE") or "").strip()
-    return s or "VIGIL2025"
+        v = ""
+    if not v:
+        v = (os.getenv("BETA_ACCESS_CODE") or "").strip()
+    return v or "VIGIL2025"  # safe default if nothing set
 
-# Optional bypass for your own testing (set BETA_BYPASS=1 in secrets or env)
 def _beta_bypass() -> bool:
     try:
         b = str(st.secrets.get("BETA_BYPASS", "")).strip()
@@ -42,35 +41,33 @@ if not st.session_state.get("beta_ok"):
     else:
         with st.sidebar.form("beta_gate_form", clear_on_submit=False):
             st.write("🔒 **Beta Access**")
-            code_in = st.text_input("Enter beta access code", type="password", key="beta_code").strip()
-            ok = st.form_submit_button("Unlock")
-        if ok:
-            if code_in == _active_beta_code():
+            _code_in = st.text_input("Enter beta access code", type="password").strip()
+            _go = st.form_submit_button("Unlock")
+        if _go:
+            if _code_in == _active_beta_code():
                 st.session_state["beta_ok"] = True
                 st.success("Beta unlocked.")
                 st.experimental_rerun()
             else:
                 st.error("Invalid access code.")
                 st.stop()
-        # First load / no submit yet → hold here
         st.stop()
-# --------------------------
 
+# =========================
+# Streamlit compatibility alias
+# =========================
 try:
-    # If we're on a new version (st.rerun exists) but experimental_rerun doesn't,
-    # alias it so existing code works without edits.
     if hasattr(st, "rerun") and not hasattr(st, "experimental_rerun"):
         st.experimental_rerun = st.rerun
 except Exception:
     pass
-# ---------------------------------------------------------------------------
 
-# ======== GLOBAL WIDGET HARDENING (drop-in replacement) ========
-# Put this right after: import streamlit as st
-
-# Keep originals
-__orig_multiselect = _st_internal.multiselect
-__orig_selectbox   = _st_internal.selectbox
+# =========================
+# GLOBAL WIDGET HARDENING (safe wrappers)
+# =========================
+# Keep originals BEFORE we patch
+__orig_multiselect = st.multiselect
+__orig_selectbox   = st.selectbox
 
 def __to_list(x: Any) -> list:
     if x is None:
@@ -80,10 +77,6 @@ def __to_list(x: Any) -> list:
     return [x]
 
 def __filter_defaults(default_vals: Any, options: Iterable) -> list:
-    """
-    Returns only those defaults that actually exist in options (by equality).
-    Works for strings and other comparable objects.
-    """
     opts_list = list(options or [])
     safe = []
     for dv in __to_list(default_vals):
@@ -92,23 +85,13 @@ def __filter_defaults(default_vals: Any, options: Iterable) -> list:
     return safe
 
 def __safe_multiselect(label: str, options: Iterable, default: Any = None, **kwargs):
-    """
-    Drop-in replacement for st.multiselect:
-    - Removes any default items that aren't in options so Streamlit won't crash.
-    - If ALL defaults are invalid, it shows with an empty default.
-    - Never throws because of mismatched defaults.
-    """
     try:
         clean_default = __filter_defaults(default, options)
-        return __orig_multiselect(label, options=options, default=clean_default, **kwargs)
+        return __orig_multiselect(label, options=list(options or []), default=clean_default, **kwargs)
     except Exception:
         return __orig_multiselect(label, options=list(options or []), default=[], **kwargs)
 
 def __safe_selectbox(label: str, options: Iterable, index: int = 0, **kwargs):
-    """
-    Robust selectbox:
-    - If index is invalid (or options empty), clamps to a safe value.
-    """
     try:
         opts = list(options or [])
         if 'index' in kwargs:
@@ -122,23 +105,14 @@ def __safe_selectbox(label: str, options: Iterable, index: int = 0, **kwargs):
     except Exception:
         return __orig_selectbox(label, options=[""], index=0, **kwargs)
 
-# Monkey-patch globally
+# Monkey-patch
 st.multiselect = __safe_multiselect
 st.selectbox   = __safe_selectbox
 # ======== END GLOBAL WIDGET HARDENING ========
 
 # =========================
-# Feature gates (kept for clarity)
+# Always-visible beta banner
 # =========================
-FEATURE_RUNTIME_TRACKER_READY = True
-FEATURE_MAINTENANCE_RECORDS_READY = False
-
-# =========================
-# Page config & aesthetics
-# =========================
-st.set_page_config(page_title="VIGIL", layout="wide")
-
-# 2) Always-visible beta banner (HTML, not affected by st themes)
 st.markdown("""
 <div style="
   margin: 10px 0 16px 0;
@@ -153,10 +127,9 @@ st.markdown("""
 </div>
 """, unsafe_allow_html=True)
 
-# (Optional) Keep a Streamlit-native notice too (safe to remove if you prefer)
-# st.info("VIGIL • Public Beta v0.1.0 — If anything looks off, please let us know.")
-
-# 3) Component styling (tabs)
+# =========================
+# Component styling (tabs) + Global CSS
+# =========================
 st.markdown("""
 <style>
 div[data-testid="stTabs"] div[data-testid="stTabs"] button[role="tab"] {
@@ -174,7 +147,6 @@ div[data-testid="stTabs"] div[data-testid="stTabs"] button[aria-selected="true"]
 </style>
 """, unsafe_allow_html=True)
 
-# 4) Global CSS injector
 def _inject_css():
     st.markdown("""
     <style>
@@ -201,26 +173,13 @@ def _inject_css():
       border-radius: 12px !important; overflow: hidden !important;
       box-shadow: 0 8px 20px rgba(0,0,0,0.15); background: rgba(255,255,255,0.85);
     }
-    .stTabs [data-baseweb="tab-list"]{ gap: 6px; }
-    .stTabs [data-baseweb="tab"]{
-      background: rgba(255,255,255,0.7); border: 1px solid rgba(0,0,0,0.08);
-      border-radius: 10px; padding: 8px 12px;
-    }
     .soft-card{
       padding:14px;border:1px solid rgba(0,0,0,0.08);border-radius:12px;
       background:rgba(255,255,255,0.8);box-shadow:0 8px 20px rgba(0,0,0,0.08);
     }
-    .small-note { color:#334155; font-size:0.85rem; }
-    .demo-ribbon {
-      position: fixed; right: -50px; top: 14px; z-index: 9999;
-      transform: rotate(45deg);
-      background: #0ea5e9; color: #0b1220; font-weight: 700;
-      padding: 6px 80px; box-shadow: 0 8px 18px rgba(0,0,0,.35);
-    }
     </style>
     """, unsafe_allow_html=True)
 
-# 5) App header (only show INSIDE the app, not on landing)
 def _header():
     st.markdown("""
     <div style="
@@ -234,48 +193,17 @@ def _header():
     </div>
     """, unsafe_allow_html=True)
 
-# 6) Apply CSS now (defer header)
-
 _inject_css()
-# Call _header() later when user is in the app, e.g.:
-# if st.session_state.get("logged_in") or st.session_state.get("mode") in ("Demo","App"):
-#     _header()
-# ... then build your main tabs/layout
-
-# ========= Per-user (tenant) storage helpers =========
-def _tenant_key(email: str) -> str:
-    """Stable ID for a user; lowercases email and hashes it."""
-    email = (email or "").strip().lower()
-    if not email:
-        return "anonymous"
-    return hashlib.sha1(email.encode("utf-8")).hexdigest()[:12]
-
-def _ensure_dir(p: str):
-    os.makedirs(p, exist_ok=True)
-    return p
-
-def set_tenant_paths(email: str):
-    """
-    Call this RIGHT AFTER login succeeds (before loading assets/runtime/history).
-    It rewires global file paths to a per-user data root under _tenants/<id>/data.
-    """
-    global DATA_DIR, ASSETS_JSON, RUNTIME_CSV, HISTORY_CSV, ATTACH_DIR, DB_PATH, CONFIG_JSON
-    # IMPORTANT: do NOT move USERS_JSON here; keep it shared for all accounts.
-
-    tenant_id = _tenant_key(email)
-    base = _ensure_dir(os.path.join("_tenants", tenant_id, "data"))
-
-    DATA_DIR    = base
-    ASSETS_JSON = os.path.join(base, "assets.json")
-    RUNTIME_CSV = os.path.join(base, "runtime.csv")
-    HISTORY_CSV = os.path.join(base, "history.csv")
-    ATTACH_DIR  = _ensure_dir(os.path.join(base, "attachments"))
-    DB_PATH     = os.path.join(base, "reliability.db")
-    CONFIG_JSON = os.path.join(base, "config.json")
-# ========= End per-user helpers =========
+# Call _header() later when user is in the app.
 
 # =========================
-# Paths & config
+# Feature flags
+# =========================
+FEATURE_RUNTIME_TRACKER_READY = True
+FEATURE_MAINTENANCE_RECORDS_READY = False
+
+# =========================
+# Paths & config (define BEFORE persistence checks)
 # =========================
 DATA_DIR = "data"; os.makedirs(DATA_DIR, exist_ok=True)
 ASSETS_JSON  = os.path.join(DATA_DIR, "assets.json")
@@ -283,7 +211,8 @@ RUNTIME_CSV  = os.path.join(DATA_DIR, "runtime.csv")
 HISTORY_CSV  = os.path.join(DATA_DIR, "history.csv")
 ATTACH_DIR   = os.path.join(DATA_DIR, "attachments"); os.makedirs(ATTACH_DIR, exist_ok=True)
 DB_PATH      = os.path.join(DATA_DIR, "reliability.db")
-USERS_JSON   = os.path.join(DATA_DIR, "users.json")   # NEW
+USERS_JSON   = os.path.join(DATA_DIR, "users.json")
+CONFIG_JSON  = os.path.join(DATA_DIR, "config.json")
 
 DEFAULT_CONFIG = {
     "address_book":[{"name":"Planner","email":"planner@maraksreliability.com"}],
@@ -295,7 +224,47 @@ DEFAULT_CONFIG = {
     "default_asset_filter":[],
     "next_wo_seq":1
 }
-CONFIG_JSON = os.path.join(DATA_DIR, "config.json")
+
+# =========================
+# Persistence Guard (safe, minimal)
+# =========================
+def _is_logged_in() -> bool:
+    return bool(st.session_state.get("user") or st.session_state.get("logged_in") or st.session_state.get("email"))
+
+# Force out of demo if logged in (prevents “Demo mode: saving disabled”)
+if _is_logged_in():
+    st.session_state["is_demo"] = False
+
+# Ensure folders exist + quick write test
+for _p in [ASSETS_JSON, RUNTIME_CSV, HISTORY_CSV]:
+    try:
+        os.makedirs(os.path.dirname(_p) or ".", exist_ok=True)
+    except Exception as _e:
+        st.error(f"Storage path problem at '{_p}': {str(_e)}")
+
+def _persist_ping() -> tuple[bool, str]:
+    try:
+        _test_path = os.path.join(DATA_DIR, ".vigil_write_test")
+        with open(_test_path, "wb") as f:
+            f.write(b"ok")
+        return True, f"Write OK → {DATA_DIR}"
+    except Exception as e:
+        return False, f"Write FAILED at {DATA_DIR}: {e}"
+
+_ok, _msg = _persist_ping()
+if not _ok:
+    st.error(_msg)
+else:
+    with st.sidebar.expander("⚙️ Admin / Storage", expanded=False):
+        st.caption(_msg)
+        if st.button("Force Save Assets", use_container_width=True):
+            try:
+                assets = st.session_state.get("assets", {})
+                with open(ASSETS_JSON, "w", encoding="utf-8") as f:
+                    json.dump(assets, f, indent=2, ensure_ascii=False)
+                st.success("Assets saved to disk.")
+            except Exception as e:
+                st.error(f"Save failed: {e}")
 
 # =========================
 # Auth store (users.json)
@@ -303,7 +272,8 @@ CONFIG_JSON = os.path.join(DATA_DIR, "config.json")
 def _load_users()->list:
     try:
         if os.path.exists(USERS_JSON):
-            with open(USERS_JSON,"r",encoding="utf-8") as f: d=json.load(f)
+            with open(USERS_JSON,"r",encoding="utf-8") as f:
+                d=json.load(f)
             return d if isinstance(d, list) else []
         return []
     except Exception:
@@ -312,7 +282,8 @@ def _load_users()->list:
 def _save_users(users:list):
     try:
         os.makedirs(os.path.dirname(USERS_JSON), exist_ok=True)
-        with open(USERS_JSON,"w",encoding="utf-8") as f: json.dump(users,f,indent=2,ensure_ascii=False)
+        with open(USERS_JSON,"w",encoding="utf-8") as f:
+            json.dump(users,f,indent=2,ensure_ascii=False)
     except Exception as e:
         st.error(f"Failed to save users: {e}")
 
@@ -324,7 +295,6 @@ def _pwd_hash(pw:str, salt:Optional[str]=None)->tuple[str,str]:
     try:
         salt_bytes = bytes.fromhex(salt)
     except ValueError:
-        # tolerate non-hex salt strings gracefully
         salt_bytes = str(salt).encode("utf-8")
     return salt, _hash_pbkdf2_sha256(pw, salt_bytes)
 
@@ -336,7 +306,6 @@ def _find_user(email:str)->Optional[dict]:
     return None
 
 def _create_user(name:str, email:str, pw:str)->tuple[bool,str]:
-    # Trim before validation to avoid false "empty" due to spaces
     name=name.strip(); email=email.strip().lower(); pw = pw or ""
     if not name or not email or not pw:
         return False, "Please fill all fields."
@@ -360,7 +329,6 @@ def _verify_login(email:str, pw:str)->tuple[bool,Optional[dict],str]:
         return False, None, "Account not found."
     try:
         salt=u.get("salt",""); hh=u.get("hash",""); algo=u.get("algo","pbkdf2_sha256_v1")
-        # Compute candidate hash (robust to salt format)
         try:
             salt_bytes = bytes.fromhex(salt)
         except ValueError:
@@ -378,7 +346,7 @@ def _verify_login(email:str, pw:str)->tuple[bool,Optional[dict],str]:
         return False, None, "Login failed."
 
 # =========================
-# DB (SQLite)
+# DB (SQLite) — minimal schema used by runtime
 # =========================
 class _DB:
     def __init__(self, path:str):
@@ -420,8 +388,10 @@ class _DB:
         q="SELECT tag, details_json FROM assets WHERE 1=1"; p=[]
         if search:
             q+=" AND tag LIKE ?"; p.append(f"%{search}%")
-        try: return pd.read_sql_query(q, self.conn, params=p)
-        except Exception: return pd.DataFrame(columns=["tag","details_json"])
+        try:
+            return pd.read_sql_query(q, self.conn, params=p)
+        except Exception:
+            return pd.DataFrame(columns=["tag","details_json"])
 
 db = _DB(DB_PATH)
 
@@ -435,7 +405,8 @@ def fetch_assets_from_db(search: Optional[str], rev:int) -> pd.DataFrame:
 def _load_assets()->dict:
     if os.path.exists(ASSETS_JSON):
         try:
-            with open(ASSETS_JSON,"r",encoding="utf-8") as f: d=json.load(f)
+            with open(ASSETS_JSON,"r",encoding="utf-8") as f:
+                d=json.load(f)
             return d if isinstance(d,dict) else {}
         except Exception as e:
             st.error(f"Failed to load assets JSON: {e}")
@@ -446,14 +417,17 @@ def _save_assets(d:dict):
         st.info("💡 Demo mode: saving to disk is disabled. Create an account to keep your data.")
         return
     try:
-        with open(ASSETS_JSON,"w",encoding="utf-8") as f: json.dump(d,f,indent=2,ensure_ascii=False)
+        with open(ASSETS_JSON,"w",encoding="utf-8") as f:
+            json.dump(d,f,indent=2,ensure_ascii=False)
     except Exception as e:
         st.error(f"Failed to save assets JSON: {e}")
 
 def _load_runtime()->pd.DataFrame:
     if os.path.exists(RUNTIME_CSV):
-        try: return pd.read_csv(RUNTIME_CSV)
-        except Exception as e: st.error(f"Failed to load runtime CSV: {e}")
+        try:
+            return pd.read_csv(RUNTIME_CSV)
+        except Exception as e:
+            st.error(f"Failed to load runtime CSV: {e}")
     return pd.DataFrame(columns=[
         "Asset Tag","Functional Location","Asset Model","Criticality",
         "MTBF (Hours)","Last Overhaul","Running Hours Since Last Major Maintenance",
@@ -464,13 +438,17 @@ def _save_runtime(df:pd.DataFrame):
     if st.session_state.get("is_demo"):
         st.info("💡 Demo mode: saving to disk is disabled. Create an account to keep your data.")
         return
-    try: df.to_csv(RUNTIME_CSV, index=False)
-    except Exception as e: st.error(f"Failed to save runtime CSV: {e}")
+    try:
+        df.to_csv(RUNTIME_CSV, index=False)
+    except Exception as e:
+        st.error(f"Failed to save runtime CSV: {e}")
 
 def _load_history()->pd.DataFrame:
     if os.path.exists(HISTORY_CSV):
-        try: return pd.read_csv(HISTORY_CSV)
-        except Exception as e: st.error(f"Failed to load history CSV: {e}")
+        try:
+            return pd.read_csv(HISTORY_CSV)
+        except Exception as e:
+            st.error(f"Failed to load history CSV: {e}")
     return pd.DataFrame(columns=[
         "Number","Asset Tag","Functional Location","WO Number","Date of Maintenance",
         "Maintenance Code","Spares Used","QTY","Hours Run Since Last Repair",
@@ -480,19 +458,23 @@ def _load_history()->pd.DataFrame:
 def _load_config()->dict:
     try:
         if os.path.exists(CONFIG_JSON):
-            with open(CONFIG_JSON,"r",encoding="utf-8") as f: d=json.load(f)
-        else: d={}
+            with open(CONFIG_JSON,"r",encoding="utf-8") as f:
+                d=json.load(f)
+        else:
+            d={}
         cfg=DEFAULT_CONFIG.copy(); cfg.update(d if isinstance(d,dict) else {})
         return cfg
     except Exception as e:
-        st.warning(f"Config load issue: {e}"); return DEFAULT_CONFIG.copy()
+        st.warning(f"Config load issue: {e}")
+        return DEFAULT_CONFIG.copy()
 
 def _save_config(cfg:dict):
     if st.session_state.get("is_demo"):
         st.info("💡 Demo mode: saving to disk is disabled. Create an account to keep your settings.")
         return
     try:
-        with open(CONFIG_JSON,"w",encoding="utf-8") as f: json.dump(cfg,f,indent=2,ensure_ascii=False)
+        with open(CONFIG_JSON,"w",encoding="utf-8") as f:
+            json.dump(cfg,f,indent=2,ensure_ascii=False)
     except Exception as e:
         st.error(f"Failed to save config: {e}")
 
@@ -508,7 +490,6 @@ if "search_query" not in st.session_state: st.session_state.search_query = {}
 if "component_life" not in st.session_state: st.session_state.component_life = {}
 
 def _bump_rev(): st.session_state.data_rev += 1
-
 # =========================
 # Helpers
 # =========================
