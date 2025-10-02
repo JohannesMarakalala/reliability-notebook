@@ -1,1 +1,12 @@
 .streamlit/secrets.toml
+
+# ===== Template branch ignores =====
+data/
+jobs/
+reliability.db
+_site/
+_tenants/
+ECHO is on.
+# Keep demo/sample content
+!data_demo/**
+!sites/**
