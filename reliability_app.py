@@ -201,11 +201,44 @@ def _header():
     """, unsafe_allow_html=True)
 
 # 6) Apply CSS now (defer header)
+
 _inject_css()
 # Call _header() later when user is in the app, e.g.:
 # if st.session_state.get("logged_in") or st.session_state.get("mode") in ("Demo","App"):
 #     _header()
 # ... then build your main tabs/layout
+
+# ========= Per-user (tenant) storage helpers =========
+def _tenant_key(email: str) -> str:
+    """Stable ID for a user; lowercases email and hashes it."""
+    email = (email or "").strip().lower()
+    if not email:
+        return "anonymous"
+    return hashlib.sha1(email.encode("utf-8")).hexdigest()[:12]
+
+def _ensure_dir(p: str):
+    os.makedirs(p, exist_ok=True)
+    return p
+
+def set_tenant_paths(email: str):
+    """
+    Call this RIGHT AFTER login succeeds (before loading assets/runtime/history).
+    It rewires global file paths to a per-user data root under _tenants/<id>/data.
+    """
+    global DATA_DIR, ASSETS_JSON, RUNTIME_CSV, HISTORY_CSV, ATTACH_DIR, DB_PATH, CONFIG_JSON
+    # IMPORTANT: do NOT move USERS_JSON here; keep it shared for all accounts.
+
+    tenant_id = _tenant_key(email)
+    base = _ensure_dir(os.path.join("_tenants", tenant_id, "data"))
+
+    DATA_DIR    = base
+    ASSETS_JSON = os.path.join(base, "assets.json")
+    RUNTIME_CSV = os.path.join(base, "runtime.csv")
+    HISTORY_CSV = os.path.join(base, "history.csv")
+    ATTACH_DIR  = _ensure_dir(os.path.join(base, "attachments"))
+    DB_PATH     = os.path.join(base, "reliability.db")
+    CONFIG_JSON = os.path.join(base, "config.json")
+# ========= End per-user helpers =========
 
 # =========================
 # Paths & config
@@ -843,8 +876,14 @@ def _landing_view():
                     if st.button("Sign In →", key="btn_login", use_container_width=True):
                         ok, user, msg = _verify_login((email or "").strip(), pw or "")
                         if ok:
-                            st.session_state.auth_user = user
+                            st.session_state.auth_user = user            
                             st.session_state.pop("is_demo", None)
+                            set_tenant_paths(st.session_state["auth_user"]["email"])
+                            st.session_state.assets     = _load_assets()
+                            st.session_state.runtime_df = _load_runtime()
+                            st.session_state.history_df = _load_history()
+                            st.session_state.config     = _load_config()
+
                             st.success("Welcome back! Redirecting...")
                             st.experimental_rerun()
                         else:
