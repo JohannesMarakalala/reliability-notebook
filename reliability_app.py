@@ -977,6 +977,9 @@ if st.session_state.get("is_demo"):
 # =========================
 _sidebar()
 
+# Show app header now that we're inside the app
+_header()
+
 # =========================
 # Tabs (7) — your app continues below
 # =========================
