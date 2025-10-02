@@ -1,4 +1,0 @@
-Asset Tag,Functional Location,Asset Model,Criticality,MTBF (Hours),Last Overhaul,Running Hours Since Last Major Maintenance,Remaining Hours,STATUS
-408-PP-001,Primary Mill Discharge,20/18 - AH-TU (WRT),Medium,3600.0,,0.0,3600.0,🟢 Healthy
-408-PP-008,Secondary Mill Discharge,550-MCR-TU,High,2800.0,,0.0,2800.0,🟢 Healthy
-CVY-402,Conveyor CVY-402,Belt 1200mm,Medium,4200.0,,0.0,4200.0,🟢 Healthy
