@@ -8,3 +8,4 @@ reportlab
 pillow
 requests
 matplotlib
+scipy
