@@ -186,7 +186,7 @@ def _inject_css():
     </style>
     """, unsafe_allow_html=True)
 
-# 5) App header
+# 5) App header (only show INSIDE the app, not on landing)
 def _header():
     st.markdown("""
     <div style="
@@ -200,9 +200,12 @@ def _header():
     </div>
     """, unsafe_allow_html=True)
 
-# 6) Apply CSS + show header now
+# 6) Apply CSS now (defer header)
 _inject_css()
-_header()
+# Call _header() later when user is in the app, e.g.:
+# if st.session_state.get("logged_in") or st.session_state.get("mode") in ("Demo","App"):
+#     _header()
+# ... then build your main tabs/layout
 
 # =========================
 # Paths & config
