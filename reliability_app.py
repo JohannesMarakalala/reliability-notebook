@@ -245,6 +245,48 @@ DEFAULT_CONFIG = {
     "next_wo_seq":1
 }
 
+# ===== Per-user (tenant) storage helpers — required by _landing_view() =====
+def _tenant_key(email: str) -> str:
+    """Stable ID for a user; lowercases email and hashes it (12 chars)."""
+    email = (email or "").strip().lower()
+    if not email:
+        return "anonymous"
+    return hashlib.sha1(email.encode("utf-8")).hexdigest()[:12]
+
+def _ensure_dir(path: str) -> str:
+    os.makedirs(path, exist_ok=True)
+    return path
+
+def set_tenant_paths(email: str) -> str:
+    """
+    Re-point per-user data paths under _tenants/<id>/data.
+    Returns the tenant_id. Safe to call multiple times.
+    """
+    tenant_id = _tenant_key(email)
+    base = _ensure_dir(os.path.join("_tenants", tenant_id, "data"))
+
+    # IMPORTANT: Do NOT move USERS_JSON (shared across accounts)
+    global DATA_DIR, ASSETS_JSON, RUNTIME_CSV, HISTORY_CSV, ATTACH_DIR, DB_PATH, CONFIG_JSON
+    DATA_DIR    = base
+    ASSETS_JSON = os.path.join(base, "assets.json")
+    RUNTIME_CSV = os.path.join(base, "runtime.csv")
+    HISTORY_CSV = os.path.join(base, "history.csv")
+    ATTACH_DIR  = _ensure_dir(os.path.join(base, "attachments"))
+    DB_PATH     = os.path.join(base, "reliability.db")
+    CONFIG_JSON = os.path.join(base, "config.json")
+
+    # make sure folders exist
+    os.makedirs(base, exist_ok=True)
+    os.makedirs(os.path.dirname(ASSETS_JSON), exist_ok=True)
+    os.makedirs(os.path.dirname(RUNTIME_CSV), exist_ok=True)
+    os.makedirs(os.path.dirname(HISTORY_CSV), exist_ok=True)
+    os.makedirs(ATTACH_DIR, exist_ok=True)
+
+    # mark session
+    st.session_state["tenant_id"] = tenant_id
+    return tenant_id
+# ===== End tenant helpers =====
+
 # =========================
 # Persistence Guard (safe, minimal)
 # =========================
