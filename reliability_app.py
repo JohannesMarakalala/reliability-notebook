@@ -273,49 +273,6 @@ def set_tenant_paths(email: str):
     DB_PATH     = os.path.join(base, "reliability.db")
     CONFIG_JSON = os.path.join(base, "config.json")
 # ========= End per-user helpers =========
-# ===== Persistence Guard (auto-fix demo flag + write test) =====
-import io
-
-def _is_logged_in() -> bool:
-    u = st.session_state.get("user") or st.session_state.get("logged_in") or st.session_state.get("email")
-    return bool(u)
-
-# 1) If user is logged in, NEVER run in demo mode
-if _is_logged_in():
-    st.session_state["is_demo"] = False
-
-# 2) Ensure folders exist
-try:
-    os.makedirs(os.path.dirname(ASSETS_JSON), exist_ok=True)
-    os.makedirs(os.path.dirname(RUNTIME_CSV), exist_ok=True)
-    os.makedirs(os.path.dirname(HISTORY_CSV), exist_ok=True)
-except Exception as _e:
-    st.error(f"Storage path problem: {ASSETS_JSON} ({_e})")
-
-# 3) Quick write test so we know saving will survive a refresh
-def _persist_ping() -> tuple[bool, str]:
-    try:
-        test_path = os.path.join(DATA_DIR, ".vigil_write_test")
-        with open(test_path, "wb") as f:
-            f.write(b"ok")
-        return True, f"Write OK → {DATA_DIR}"
-    except Exception as e:
-        return False, f"Write FAILED at {DATA_DIR}: {e}"
-
-ok, msg = _persist_ping()
-if not ok:
-    st.error(msg)
-else:
-    # Optional small control to force a save immediately
-    with st.sidebar.expander("⚙️ Admin / Storage", expanded=False):
-        st.caption(msg)
-        if st.button("Force Save Assets", use_container_width=True):
-            try:
-                _save_assets(st.session_state.get("assets", {}))
-                st.success("Assets saved to disk.")
-            except Exception as e:
-                st.error(f"Save failed: {e}")
-# ===== End Persistence Guard =====
 
 # =========================
 # Paths & config
