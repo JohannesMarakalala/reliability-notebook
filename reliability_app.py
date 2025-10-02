@@ -104,6 +104,25 @@ FEATURE_MAINTENANCE_RECORDS_READY = False
 # =========================
 st.set_page_config(page_title="VIGIL", layout="wide")
 
+# 2) Always-visible beta banner (HTML, not affected by st themes)
+st.markdown("""
+<div style="
+  margin: 10px 0 16px 0;
+  padding: 10px 14px;
+  border-radius: 10px;
+  background: rgba(14,165,233,0.12);
+  border: 1px solid rgba(14,165,233,0.35);
+  color: #0b1220;
+  font-weight: 600;
+">
+  VIGIL • Public Beta v0.1.0 — If anything looks off, please let us know.
+</div>
+""", unsafe_allow_html=True)
+
+# (Optional) Keep a Streamlit-native notice too (safe to remove if you prefer)
+# st.info("VIGIL • Public Beta v0.1.0 — If anything looks off, please let us know.")
+
+# 3) Component styling (tabs)
 st.markdown("""
 <style>
 div[data-testid="stTabs"] div[data-testid="stTabs"] button[role="tab"] {
@@ -121,6 +140,7 @@ div[data-testid="stTabs"] div[data-testid="stTabs"] button[aria-selected="true"]
 </style>
 """, unsafe_allow_html=True)
 
+# 4) Global CSS injector
 def _inject_css():
     st.markdown("""
     <style>
@@ -166,6 +186,7 @@ def _inject_css():
     </style>
     """, unsafe_allow_html=True)
 
+# 5) App header
 def _header():
     st.markdown("""
     <div style="
@@ -179,7 +200,9 @@ def _header():
     </div>
     """, unsafe_allow_html=True)
 
-_inject_css(); _header()
+# 6) Apply CSS + show header now
+_inject_css()
+_header()
 
 # =========================
 # Paths & config
