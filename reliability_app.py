@@ -286,6 +286,133 @@ def set_tenant_paths(email: str) -> str:
     st.session_state["tenant_id"] = tenant_id
     return tenant_id
 # ===== End tenant helpers =====
+# ===== Tenant Auto-Switch + Reload (keeps data after logout/login) =====
+import os, json, pandas as pd, streamlit as st
+
+def _load_json_safe(pth: str, default):
+    try:
+        if os.path.exists(pth):
+            with open(pth, "r", encoding="utf-8") as f:
+                obj = json.load(f)
+            # guard against wrong types
+            return obj if isinstance(obj, type(default)) else default
+    except Exception as e:
+        st.warning(f"Read issue: {os.path.basename(pth)} ({e})")
+    return default
+
+def _reload_tenant_stores():
+    """Reload assets/runtime/history/config from CURRENT tenant paths into session_state and persist."""
+    # Ensure dirs (set_tenant_paths must have already pointed globals at tenant paths)
+    for _p in [ASSETS_JSON, RUNTIME_CSV, HISTORY_CSV, CONFIG_JSON]:
+        os.makedirs(os.path.dirname(_p) or ".", exist_ok=True)
+
+    # Load JSONs
+    assets = _load_json_safe(ASSETS_JSON, {})
+    cfg    = _load_json_safe(CONFIG_JSON, {})
+
+    # Load CSVs (make empty frames if missing)
+    try:
+        rt = pd.read_csv(RUNTIME_CSV)
+    except Exception:
+        rt = pd.DataFrame(columns=[
+            "Asset Tag","Functional Location","Asset Model","Criticality",
+            "MTBF (Hours)","Last Overhaul","Running Hours Since Last Major Maintenance",
+            "Remaining Hours","STATUS"
+        ])
+    try:
+        hist = pd.read_csv(HISTORY_CSV)
+    except Exception:
+        hist = pd.DataFrame(columns=[
+            "Number","Asset Tag","Functional Location","WO Number","Date of Maintenance",
+            "Maintenance Code","Spares Used","QTY","Hours Run Since Last Repair",
+            "Labour Hours","Asset Downtime Hours","Notes and Findings","Attachments"
+        ])
+
+    # Drop into session
+    st.session_state.assets     = assets
+    st.session_state.config     = (DEFAULT_CONFIG | cfg) if 'DEFAULT_CONFIG' in globals() else cfg
+    st.session_state.runtime_df = rt
+    st.session_state.history_df = hist
+    st.session_state.data_rev   = st.session_state.get("data_rev", 0) + 1
+
+    # Persist back to ensure files exist for next run
+    try:
+        with open(ASSETS_JSON, "w", encoding="utf-8") as f: json.dump(st.session_state.assets, f, indent=2, ensure_ascii=False)
+    except Exception as e:
+        st.error(f"Save assets failed: {e}")
+    try:
+        st.session_state.runtime_df.to_csv(RUNTIME_CSV, index=False)
+    except Exception as e:
+        st.warning(f"Save runtime failed: {e}")
+    try:
+        with open(CONFIG_JSON, "w", encoding="utf-8") as f: json.dump(st.session_state.config, f, indent=2, ensure_ascii=False)
+    except Exception as e:
+        st.warning(f"Save config failed: {e}")
+
+def _tenant_key_safe():
+    u = st.session_state.get("auth_user") or st.session_state.get("user") or {}
+    email = (u.get("email") if isinstance(u, dict) else u) or ""
+    return _tenant_key(email), email  # uses your existing _tenant_key
+
+def _ensure_tenant_active():
+    """If logged in and tenant not set or changed, switch paths + reload stores."""
+    tkey, email = _tenant_key_safe()
+    if email:
+        # If tenant paths not yet set or different, switch and reload
+        if st.session_state.get("tenant_id") != tkey:
+            set_tenant_paths(email)     # updates DATA_DIR, ASSETS_JSON, etc.
+            _reload_tenant_stores()     # loads tenant files into session
+            try:
+                st.experimental_rerun()
+            except Exception:
+                pass
+
+# Run auto-switch once per run
+_ensure_tenant_active()
+
+# ---- Optional: Manual controls while testing (Sidebar) ----
+with st.sidebar.expander("⚙️ Tenant / Storage", expanded=False):
+    if st.button("Reload Tenant Storage", use_container_width=True):
+        _ensure_tenant_active()
+        st.success("Tenant storage reloaded.")
+
+    # "Sync Runtime Now" — rebuild/align runtime from assets
+    def _compute_remaining_hours_safe(df: pd.DataFrame) -> pd.DataFrame:
+        # use your compute_remaining_hours if present, else a tiny fallback
+        if "compute_remaining_hours" in globals():
+            return compute_remaining_hours(df)
+        df = df.copy()
+        if "MTBF (Hours)" not in df.columns: df["MTBF (Hours)"] = 0.0
+        if "Running Hours Since Last Major Maintenance" not in df.columns:
+            df["Running Hours Since Last Major Maintenance"] = 0.0
+        df["Remaining Hours"] = (pd.to_numeric(df["MTBF (Hours)"], errors="coerce").fillna(0.0) -
+                                 pd.to_numeric(df["Running Hours Since Last Major Maintenance"], errors="coerce").fillna(0.0)).clip(lower=0.0)
+        if "STATUS" not in df.columns:
+            df["STATUS"] = "Healthy"
+        return df
+
+    if st.button("Sync Runtime Now", use_container_width=True):
+        assets = st.session_state.get("assets", {})
+        rows = []
+        for tag, meta in (assets or {}).items():
+            rows.append({
+                "Asset Tag": tag,
+                "Functional Location": meta.get("Functional Location",""),
+                "Asset Model": meta.get("Model",""),
+                "Criticality": meta.get("Criticality","Medium"),
+                "MTBF (Hours)": float(meta.get("MTBF (Hours)", 0.0)),
+                "Last Overhaul": meta.get("Last Overhaul",""),
+                "Running Hours Since Last Major Maintenance": 0.0,
+            })
+        rt = pd.DataFrame(rows)
+        rt = _compute_remaining_hours_safe(rt)
+        st.session_state.runtime_df = rt
+        try:
+            rt.to_csv(RUNTIME_CSV, index=False)
+        except Exception as e:
+            st.warning(f"Runtime save failed: {e}")
+        st.success("Runtime synced from Assets.")
+# ===== End Tenant Auto-Switch + Reload =====
 
 # =========================
 # Persistence Guard (safe, minimal)
