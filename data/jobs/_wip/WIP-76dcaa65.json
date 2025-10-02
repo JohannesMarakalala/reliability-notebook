@@ -1,0 +1,92 @@
+{
+  "id": "WIP-76dcaa65",
+  "persist_id": "JOB-20250912-138",
+  "created_at": "2025-09-12T17:42:33.559172",
+  "status": "Submitted",
+  "archived": false,
+  "trashed": false,
+  "asset_tag": "",
+  "pm_code": "",
+  "task_description": "",
+  "creator": "",
+  "required_end_date": "2025-09-12",
+  "priority": "",
+  "requested_by": "",
+  "wo_number": "WO-000005",
+  "lead_role": "",
+  "co_leads": [],
+  "lead_department": "Mechanical",
+  "spares": [],
+  "delivery_note": "",
+  "labour": [
+    {
+      "craft": "Mechanical Technician",
+      "qty": 1,
+      "hours": 4.0,
+      "dept": "Mechanical",
+      "notes": "",
+      "names": ""
+    }
+  ],
+  "lifting": {
+    "mobile_crane": {
+      "required": false,
+      "spec": "",
+      "window": ""
+    },
+    "overhead_crane": {
+      "required": false,
+      "spec": ""
+    },
+    "forklift": {
+      "required": false,
+      "capacity": ""
+    },
+    "truck": {
+      "required": false,
+      "type": ""
+    },
+    "manlift": {
+      "required": false,
+      "spec": ""
+    },
+    "scaffolding": {
+      "required": false,
+      "spec": ""
+    }
+  },
+  "logistics": {
+    "pickup_point": "",
+    "delivery_location": "",
+    "transport_needed": false,
+    "transport_type": "",
+    "route_constraints": "",
+    "permits": [],
+    "responsible_person": ""
+  },
+  "planned_duration_hours": 0.0,
+  "planned_start": "2025-09-12",
+  "capacity_fit": [
+    {
+      "date": "2025-09-12",
+      "craft": "Mechanical Technician",
+      "hours": 4.0
+    }
+  ],
+  "kitting_readiness": {
+    "pct_ok": 0.0,
+    "warnings": []
+  },
+  "attachments": [],
+  "export": {
+    "csv_path": "",
+    "ics_path": "",
+    "pdf_path": "",
+    "html_path": ""
+  },
+  "last_emailed_at": "",
+  "last_updated": "2025-09-12T17:51:04.480571",
+  "pdf_path": "data\\attachments\\plans\\JOB-20250912-138\\WO-000005.html",
+  "currency": "ZAR",
+  "fx_rate": 18.5
+}

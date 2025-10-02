@@ -1,0 +1,134 @@
+{
+  "408-PP-001": {
+    "Functional Location": "Primary Mill Discharge",
+    "Asset Type": "Pump",
+    "Model": "20/18 - AH-TU (WRT)",
+    "Criticality": "Medium",
+    "MTBF (Hours)": 3600,
+    "Technical Details": [
+      {
+        "Parameter": "Motor Power",
+        "Value": "1450",
+        "Unit": "kW",
+        "Notes": ""
+      }
+    ],
+    "BOM Table": [
+      {
+        "CMMS MATERIAL CODE": "AM0525666",
+        "OEM PART NUMBER": "T118-1-K31",
+        "DESCRIPTION": "LANTERN RESTRICTOR",
+        "QUANTITY": 1,
+        "PRICE": 150.0,
+        "CRITICALITY": "Medium",
+        "MTBF (H)": 1200
+      },
+      {
+        "CMMS MATERIAL CODE": "AM1806819",
+        "OEM PART NUMBER": "7189T1116-2018TUAH",
+        "DESCRIPTION": "PACKING SET OF 4",
+        "QUANTITY": 4,
+        "PRICE": 200.0,
+        "CRITICALITY": "High",
+        "MTBF (H)": 600
+      },
+      {
+        "CMMS MATERIAL CODE": "AM2454801",
+        "OEM PART NUMBER": "WRT-IMPELLER",
+        "DESCRIPTION": "IMPELLER",
+        "QUANTITY": 1,
+        "PRICE": 500.0,
+        "CRITICALITY": "High",
+        "MTBF (H)": 1000
+      },
+      {
+        "CMMS MATERIAL CODE": "AM2454802",
+        "OEM PART NUMBER": "WRT-SHAFT",
+        "DESCRIPTION": "SHAFT",
+        "QUANTITY": 1,
+        "PRICE": 800.0,
+        "CRITICALITY": "High",
+        "MTBF (H)": 3600
+      },
+      {
+        "CMMS MATERIAL CODE": "AM2454803",
+        "OEM PART NUMBER": "WRT-GLAND",
+        "DESCRIPTION": "GLAND",
+        "QUANTITY": 1,
+        "PRICE": 140.0,
+        "CRITICALITY": "Medium",
+        "MTBF (H)": 1800
+      }
+    ]
+  },
+  "408-PP-008": {
+    "Functional Location": "Secondary Mill Discharge",
+    "Asset Type": "Pump",
+    "Model": "550-MCR-TU",
+    "Criticality": "High",
+    "MTBF (Hours)": 2800,
+    "Technical Details": [
+      {
+        "Parameter": "Motor Power",
+        "Value": "1450",
+        "Unit": "kW",
+        "Notes": ""
+      }
+    ],
+    "BOM Table": [
+      {
+        "CMMS MATERIAL CODE": "AM2454827",
+        "OEM PART NUMBER": "UMC55044C23 WEIRMIN",
+        "DESCRIPTION": "WEAR PLATE",
+        "QUANTITY": 1,
+        "PRICE": 300.0,
+        "CRITICALITY": "Medium",
+        "MTBF (H)": 1500
+      },
+      {
+        "CMMS MATERIAL CODE": "AM2454828",
+        "OEM PART NUMBER": "UMC50872C3 WEIRMIN",
+        "DESCRIPTION": "IMPELLER",
+        "QUANTITY": 1,
+        "PRICE": 500.0,
+        "CRITICALITY": "High",
+        "MTBF (H)": 1000
+      }
+    ]
+  },
+  "CV-201": {
+    "Functional Location": "Conveyor CV-201",
+    "Asset Type": "Conveyor",
+    "Model": "CV-201",
+    "Criticality": "Medium",
+    "MTBF (Hours)": 4200,
+    "Technical Details": [
+      {
+        "Parameter": "Belt width",
+        "Value": "1200",
+        "Unit": "mm",
+        "Notes": ""
+      }
+    ],
+    "BOM Table": [
+      {
+        "CMMS MATERIAL CODE": "CV201-01",
+        "OEM PART NUMBER": "IDL-STD",
+        "DESCRIPTION": "IDLER STANDARD",
+        "QUANTITY": 6,
+        "PRICE": 80.0,
+        "CRITICALITY": "Medium",
+        "MTBF (H)": 3000
+      },
+      {
+        "CMMS MATERIAL CODE": "CV201-02",
+        "OEM PART NUMBER": "MOTOR-75kW",
+        "DESCRIPTION": "DRIVE MOTOR",
+        "QUANTITY": 1,
+        "PRICE": 3200.0,
+        "CRITICALITY": "High",
+        "MTBF (H)": 6000
+      }
+    ]
+  }
+}

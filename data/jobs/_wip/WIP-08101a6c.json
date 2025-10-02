@@ -1,0 +1,289 @@
+{
+  "id": "WIP-08101a6c",
+  "persist_id": "JOB-20250909-135",
+  "created_at": "2025-09-09T20:19:08.584539",
+  "status": "Draft",
+  "archived": false,
+  "trashed": false,
+  "asset_tag": "408-PP-001",
+  "pm_code": "PM01",
+  "task_description": "408-PP-001: Overhaul Pump ",
+  "creator": "Johannes Marakalala",
+  "required_end_date": "2025-12-31",
+  "priority": "High",
+  "requested_by": "",
+  "wo_number": "",
+  "lead_role": "Department Foreman — Mechanical",
+  "co_leads": [
+    "Section Engineer — Mechanical"
+  ],
+  "lead_department": "Mechanical",
+  "spares": [
+    {
+      "cmms": "AM0533180",
+      "oem": "TU18145XDP1-W106",
+      "desc": "IMPELLER 4VC-M",
+      "qty": 1,
+      "price": 348000.0,
+      "line_total": 348000.0
+    },
+    {
+      "cmms": "AM0533179",
+      "oem": "TU18078-D20",
+      "desc": "STUFFING BOX",
+      "qty": 1,
+      "price": 37441.0,
+      "line_total": 37441.0
+    },
+    {
+      "cmms": "AM0525672",
+      "oem": "T044-K24",
+      "desc": "GLAND ASSEMBLY",
+      "qty": 1,
+      "price": 3450.0,
+      "line_total": 3450.0
+    },
+    {
+      "cmms": "AM0525666",
+      "oem": "T118-1-K31",
+      "desc": "LANTERN RESTRICTOR",
+      "qty": 1,
+      "price": 1223.0,
+      "line_total": 1223.0
+    },
+    {
+      "cmms": "AM1806819",
+      "oem": "7189T1116-2018TUAH",
+      "desc": "PACKING SET OF 4",
+      "qty": 1,
+      "price": 950.0,
+      "line_total": 950.0
+    },
+    {
+      "cmms": "AM2081804",
+      "oem": "T076J221",
+      "desc": "SHAFT SLEEVE",
+      "qty": 1,
+      "price": 123462.0,
+      "line_total": 123462.0
+    },
+    {
+      "cmms": "AM0533176",
+      "oem": "H045M-E62",
+      "desc": "GLAND BOLT",
+      "qty": 4,
+      "price": 41.0,
+      "line_total": 164.0
+    },
+    {
+      "cmms": "AM0533182",
+      "oem": "U18122-S10",
+      "desc": "SEAL",
+      "qty": 1,
+      "price": 802.0,
+      "line_total": 802.0
+    },
+    {
+      "cmms": "AM0525677",
+      "oem": "U18124-U14A",
+      "desc": "VOLUTE COVER SEAL",
+      "qty": 2,
+      "price": 491.0,
+      "line_total": 982.0
+    },
+    {
+      "cmms": "AM0533175",
+      "oem": "U18110-A05A",
+      "desc": "VOLUTE LINER",
+      "qty": 1,
+      "price": 299722.89,
+      "line_total": 299722.89
+    },
+    {
+      "cmms": "AM0533181",
+      "oem": "U18083XDP1-W106",
+      "desc": "THROATBUSH",
+      "qty": 1,
+      "price": 201841.67,
+      "line_total": 201841.67
+    },
+    {
+      "cmms": "AM0525668",
+      "oem": "U18060-U13A",
+      "desc": "INTAKE JOINT RING",
+      "qty": 1,
+      "price": 744.0,
+      "line_total": 744.0
+    },
+    {
+      "cmms": "AM0533174",
+      "oem": "U18041-A05A",
+      "desc": "FRAME PLATE LINER\n  INSERT",
+      "qty": 1,
+      "price": 198613.59,
+      "line_total": 198613.59
+    },
+    {
+      "cmms": "AM0525669",
+      "oem": "UP18132-U13A",
+      "desc": "DISCHARGE JOINT RING",
+      "qty": 1,
+      "price": 18561.0,
+      "line_total": 18561.0
+    },
+    {
+      "cmms": "AM0525667",
+      "oem": "T239M-C23",
+      "desc": "RELEASE COLLAR",
+      "qty": 1,
+      "price": 17833.0,
+      "line_total": 17833.0
+    },
+    {
+      "cmms": "AM0533178",
+      "oem": "T109-S10",
+      "desc": "O-RING (69T164N439)",
+      "qty": 3,
+      "price": 28.0,
+      "line_total": 84.0
+    },
+    {
+      "cmms": "AM0533177",
+      "oem": "T005",
+      "desc": "BEARING ASSEMBLY",
+      "qty": 1,
+      "price": 230644.11,
+      "line_total": 230644.11
+    }
+  ],
+  "delivery_note": "Deliver Spares to 408 Maintenance Bay",
+  "labour": [
+    {
+      "craft": "Mechanical Technician",
+      "qty": 2,
+      "hours": 10.0,
+      "dept": "Mechanical",
+      "notes": ""
+    },
+    {
+      "craft": "Mechanical Tech Assistant",
+      "qty": 2,
+      "hours": 10.0,
+      "dept": "Mechanical",
+      "notes": "None"
+    },
+    {
+      "craft": "Rigger",
+      "qty": 1,
+      "hours": 10.0,
+      "dept": "Rigging",
+      "notes": "None"
+    },
+    {
+      "craft": "Boilermaker",
+      "qty": 1,
+      "hours": 10.0,
+      "dept": "Boiler / Fabrication",
+      "notes": "None"
+    },
+    {
+      "craft": "None",
+      "qty": 0,
+      "hours": 0.0,
+      "dept": "None",
+      "notes": "None"
+    }
+  ],
+  "lifting": {
+    "mobile_crane": {
+      "required": false,
+      "spec": "",
+      "window": ""
+    },
+    "overhead_crane": {
+      "required": true,
+      "spec": "100 "
+    },
+    "forklift": {
+      "required": true,
+      "capacity": "20"
+    },
+    "truck": {
+      "required": false,
+      "type": ""
+    },
+    "manlift": {
+      "required": false,
+      "spec": ""
+    },
+    "scaffolding": {
+      "required": false,
+      "spec": ""
+    }
+  },
+  "logistics": {
+    "pickup_point": "Main stores ",
+    "delivery_location": "408 Maintenance Bay ",
+    "transport_needed": true,
+    "transport_type": "",
+    "route_constraints": "",
+    "permits": [],
+    "responsible_person": "Section Engineer (Mech)"
+  },
+  "planned_duration_hours": 14.0,
+  "planned_start": "2025-10-14",
+  "capacity_fit": [
+    {
+      "date": "2025-10-14",
+      "craft": "Mechanical Technician",
+      "hours": 12.0
+    },
+    {
+      "date": "2025-10-14",
+      "craft": "Mechanical Tech Assistant",
+      "hours": 12.0
+    },
+    {
+      "date": "2025-10-14",
+      "craft": "Rigger",
+      "hours": 10.0
+    },
+    {
+      "date": "2025-10-14",
+      "craft": "Boilermaker",
+      "hours": 10.0
+    },
+    {
+      "date": "2025-10-15",
+      "craft": "Mechanical Technician",
+      "hours": 8.0
+    },
+    {
+      "date": "2025-10-15",
+      "craft": "Mechanical Tech Assistant",
+      "hours": 8.0
+    }
+  ],
+  "kitting_readiness": {
+    "pct_ok": 100.0,
+    "warnings": []
+  },
+  "attachments": [],
+  "export": {
+    "csv_path": "",
+    "ics_path": "",
+    "pdf_path": "",
+    "html_path": ""
+  },
+  "last_emailed_at": "",
+  "close_out": {
+    "start_date": "",
+    "finish_date": "",
+    "close_reason": "",
+    "downtime_hours": 0.0,
+    "labour_hours_confirmed": 0.0,
+    "notes_findings": "",
+    "attachments": []
+  },
+  "last_updated": "2025-09-10T15:44:27.420532"
+}

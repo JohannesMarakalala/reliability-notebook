@@ -1,0 +1,119 @@
+{
+  "id": "WIP-9dd6fa07",
+  "persist_id": "JOB-20250911-136",
+  "created_at": "2025-09-11T19:12:51.643053",
+  "status": "Submitted",
+  "archived": false,
+  "trashed": false,
+  "asset_tag": "408-PP-001",
+  "pm_code": "PM02",
+  "task_description": "408-PP-001: Repack Pump",
+  "creator": "Tumelo Magagane",
+  "required_end_date": "2025-09-30",
+  "priority": "Normal",
+  "requested_by": "Johannes Marakalala",
+  "wo_number": "WO-000003",
+  "lead_role": "Department Foreman — Mechanical",
+  "co_leads": [],
+  "lead_department": "Mechanical",
+  "spares": [
+    {
+      "cmms": "AM1806819",
+      "oem": "7189T1116-2018TUAH",
+      "desc": "PACKING SET OF 4",
+      "qty": 1,
+      "price": 920.0,
+      "line_total": 920.0
+    },
+    {
+      "cmms": "AM0533176",
+      "oem": "H045M-E62",
+      "desc": "GLAND BOLT",
+      "qty": 4,
+      "price": 64.0,
+      "line_total": 256.0
+    }
+  ],
+  "delivery_note": "",
+  "labour": [
+    {
+      "craft": "Mechanical Technician",
+      "qty": 1,
+      "hours": 4.0,
+      "dept": "Mechanical",
+      "notes": ""
+    },
+    {
+      "craft": "Mechanical Tech Assistant",
+      "qty": 1,
+      "hours": 4.0,
+      "dept": "Mechanical",
+      "notes": "None"
+    }
+  ],
+  "lifting": {
+    "mobile_crane": {
+      "required": false,
+      "spec": "",
+      "window": ""
+    },
+    "overhead_crane": {
+      "required": false,
+      "spec": ""
+    },
+    "forklift": {
+      "required": false,
+      "capacity": ""
+    },
+    "truck": {
+      "required": false,
+      "type": ""
+    },
+    "manlift": {
+      "required": false,
+      "spec": ""
+    },
+    "scaffolding": {
+      "required": false,
+      "spec": ""
+    }
+  },
+  "logistics": {
+    "pickup_point": "",
+    "delivery_location": "",
+    "transport_needed": false,
+    "transport_type": "",
+    "route_constraints": "",
+    "permits": [
+      "Electrical Isolation / LOTO"
+    ],
+    "responsible_person": ""
+  },
+  "planned_duration_hours": 5.5,
+  "planned_start": "2025-09-11",
+  "capacity_fit": [
+    {
+      "date": "2025-09-11",
+      "craft": "Mechanical Technician",
+      "hours": 4.0
+    },
+    {
+      "date": "2025-09-11",
+      "craft": "Mechanical Tech Assistant",
+      "hours": 4.0
+    }
+  ],
+  "kitting_readiness": {
+    "pct_ok": 100.0,
+    "warnings": []
+  },
+  "attachments": [],
+  "export": {
+    "csv_path": "",
+    "ics_path": "",
+    "pdf_path": "",
+    "html_path": ""
+  },
+  "last_emailed_at": "",
+  "last_updated": "2025-09-11T19:15:36.006173"
+}

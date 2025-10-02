@@ -1,0 +1,119 @@
+{
+  "labour": {
+    "regular_rate": 400.0,
+    "callout_rate": 600.0,
+    "callout_min_hours": 4.0,
+    "callout_uplift_pct": 0.15
+  },
+  "price_list": [],
+  "tariffs": {
+    "energy_kwh_rate": 1.8,
+    "water_m3_rate": 25.0
+  },
+  "working_hours": {
+    "weekdays": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "day_start": "07:00",
+    "day_end": "17:00",
+    "callout_on_weekend": true,
+    "treat_pm00_as_callout": true
+  },
+  "meters": [
+    {
+      "asset_tag": "408-PP-001",
+      "kwh_per_hour": 0.0,
+      "m3_per_hour": 0.0
+    },
+    {
+      "asset_tag": "408-PP-002",
+      "kwh_per_hour": 0.0,
+      "m3_per_hour": 0.0
+    },
+    {
+      "asset_tag": "408-PP-008",
+      "kwh_per_hour": 0.0,
+      "m3_per_hour": 0.0
+    },
+    {
+      "asset_tag": "408-PP-009",
+      "kwh_per_hour": 0.0,
+      "m3_per_hour": 0.0
+    },
+    {
+      "asset_tag": "418-PP-090",
+      "kwh_per_hour": 0.0,
+      "m3_per_hour": 0.0
+    },
+    {
+      "asset_tag": "441-PP-011",
+      "kwh_per_hour": 0.0,
+      "m3_per_hour": 0.0
+    },
+    {
+      "asset_tag": "441-PP-012",
+      "kwh_per_hour": 0.0,
+      "m3_per_hour": 0.0
+    },
+    {
+      "asset_tag": "441-PP-013",
+      "kwh_per_hour": 0.0,
+      "m3_per_hour": 0.0
+    },
+    {
+      "asset_tag": "441-PP-014",
+      "kwh_per_hour": 0.0,
+      "m3_per_hour": 0.0
+    },
+    {
+      "asset_tag": "441-PP-015",
+      "kwh_per_hour": 0.0,
+      "m3_per_hour": 0.0
+    },
+    {
+      "asset_tag": "441-PP-016",
+      "kwh_per_hour": 0.0,
+      "m3_per_hour": 0.0
+    },
+    {
+      "asset_tag": "None",
+      "kwh_per_hour": 0.0,
+      "m3_per_hour": 0.0
+    }
+  ],
+  "assumptions": {
+    "avg_daily_hours_default": 16.0
+  },
+  "duty_groups": [
+    {
+      "group": "PRIMARY MILL DISCHARGE PUMPS",
+      "members": [
+        {
+          "asset_tag": "408-PP-001",
+          "util_share": 0.7000000000000002
+        },
+        {
+          "asset_tag": "408-PP-002",
+          "util_share": 0.30000000000000004
+        }
+      ]
+    },
+    {
+      "group": "SECONDARY MILL DISCHARGE PUMPS",
+      "members": [
+        {
+          "asset_tag": "408-PP-008",
+          "util_share": 0.5
+        },
+        {
+          "asset_tag": "408-PP-009",
+          "util_share": 0.5
+        }
+      ]
+    }
+  ]
+}

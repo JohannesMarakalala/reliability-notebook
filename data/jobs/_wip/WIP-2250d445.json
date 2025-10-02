@@ -1,0 +1,55 @@
+{
+  "id": "WIP-2250d445",
+  "persist_id": "",
+  "created_at": "2025-09-18T22:25:10.289317",
+  "status": "Draft",
+  "archived": false,
+  "trashed": false,
+  "asset_tag": "",
+  "pm_code": "",
+  "task_description": "",
+  "creator": "",
+  "required_end_date": "2025-09-18",
+  "priority": "",
+  "requested_by": "",
+  "wo_number": "",
+  "lead_role": "",
+  "co_leads": [],
+  "lead_department": "",
+  "spares": [],
+  "delivery_note": "",
+  "labour": [],
+  "lifting": {
+    "cranage_required": false,
+    "crane_type": "",
+    "mobile_capacity": "",
+    "overhead_spec": "",
+    "forklift_required": false,
+    "forklift_capacity": "",
+    "scaffolding_required": false
+  },
+  "logistics": {
+    "pickup_point": "",
+    "delivery_location": "",
+    "transport_needed": false,
+    "transport_type": "",
+    "permits": [],
+    "responsible_person": ""
+  },
+  "planned_duration_hours": 0.0,
+  "planned_start": "2025-09-18",
+  "planned_end": "2025-09-24",
+  "capacity_fit": [],
+  "kitting_readiness": {
+    "pct_ok": 0.0,
+    "warnings": []
+  },
+  "attachments": [],
+  "currency_symbol": "R",
+  "export": {
+    "csv_path": "",
+    "ics_path": "",
+    "pdf_path": "",
+    "html_path": ""
+  }
+}

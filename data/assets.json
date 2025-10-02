@@ -1,0 +1,2509 @@
+{
+  "408-PP-001": {
+    "Functional Location": "PRIMARY MILL DISCHARGE PUMP #1",
+    "Asset Type": "Pump",
+    "Model": "WARMAN 20/18-TU AH",
+    "Criticality": "Medium",
+    "MTBF (Hours)": 2200.0,
+    "Last Overhaul": "2025-09=15",
+    "Technical Details": [
+      {
+        "Parameter": "FLOWRATE",
+        "Value": "4400",
+        "Unit": "m³/h",
+        "Notes": ""
+      },
+      {
+        "Parameter": "INSTALLED POWER",
+        "Value": "1450",
+        "Unit": "kW",
+        "Notes": ""
+      },
+      {
+        "Parameter": "PUMP MAXIMUM SPEED",
+        "Value": "352",
+        "Unit": "RPM",
+        "Notes": ""
+      },
+      {
+        "Parameter": "TDH",
+        "Value": "33.0",
+        "Unit": "m",
+        "Notes": ""
+      }
+    ],
+    "BOM Table": [
+      {
+        "CMMS MATERIAL CODE": "AM0525666",
+        "OEM PART NUMBER": "T118-1-K31",
+        "DESCRIPTION": "LANTERN RESTRICTOR",
+        "QUANTITY": 1,
+        "PRICE": 2234.0,
+        "CRITICALITY": "High",
+        "MTBF (H)": 2200.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM1806819",
+        "OEM PART NUMBER": "7189T1116-2018TUAH",
+        "DESCRIPTION": "PACKING SET OF 4",
+        "QUANTITY": 1,
+        "PRICE": 920.0,
+        "CRITICALITY": "High",
+        "MTBF (H)": 744.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM0533176",
+        "OEM PART NUMBER": "H045M-E62",
+        "DESCRIPTION": "GLAND BOLT",
+        "QUANTITY": 2,
+        "PRICE": 64.0,
+        "CRITICALITY": "Medium",
+        "MTBF (H)": 744.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM0533180",
+        "OEM PART NUMBER": "TU18145XDP1-W106",
+        "DESCRIPTION": "IMPELLER 4VC-M",
+        "QUANTITY": 1,
+        "PRICE": 238000.0,
+        "CRITICALITY": "High",
+        "MTBF (H)": 2200.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM0533179",
+        "OEM PART NUMBER": "TU18078-D20",
+        "DESCRIPTION": "STUFFING BOX",
+        "QUANTITY": 1,
+        "PRICE": 79480.0,
+        "CRITICALITY": "High",
+        "MTBF (H)": 2200.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM0525672",
+        "OEM PART NUMBER": "T044-K24",
+        "DESCRIPTION": "GLAND ASSEMBLY",
+        "QUANTITY": 1,
+        "PRICE": 2450.0,
+        "CRITICALITY": "Medium",
+        "MTBF (H)": 2200.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM2081804",
+        "OEM PART NUMBER": "T076J221",
+        "DESCRIPTION": "SHAFT SLEEVE",
+        "QUANTITY": 1,
+        "PRICE": 102537.0,
+        "CRITICALITY": "High",
+        "MTBF (H)": 2200.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM0533182",
+        "OEM PART NUMBER": "U18122-S10",
+        "DESCRIPTION": "SEAL",
+        "QUANTITY": 1,
+        "PRICE": 178.0,
+        "CRITICALITY": "Medium",
+        "MTBF (H)": 2200.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM0525677",
+        "OEM PART NUMBER": "U18124-U14A",
+        "DESCRIPTION": "VOLUTE COVER SEAL",
+        "QUANTITY": 2,
+        "PRICE": 202.0,
+        "CRITICALITY": "Medium",
+        "MTBF (H)": 2200.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM0533175",
+        "OEM PART NUMBER": "U18110-A05A",
+        "DESCRIPTION": "VOLUTE LINER",
+        "QUANTITY": 1,
+        "PRICE": 372499.0,
+        "CRITICALITY": "High",
+        "MTBF (H)": 2200.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM0533181",
+        "OEM PART NUMBER": "U18083XDP1-W106",
+        "DESCRIPTION": "THROATBUSH",
+        "QUANTITY": 1,
+        "PRICE": 244530.0,
+        "CRITICALITY": "High",
+        "MTBF (H)": 2200.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM0525668",
+        "OEM PART NUMBER": "U18060-U13A",
+        "DESCRIPTION": "INTAKE JOINT RING",
+        "QUANTITY": 1,
+        "PRICE": 875.0,
+        "CRITICALITY": "Medium",
+        "MTBF (H)": 10000.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM0533174",
+        "OEM PART NUMBER": "U18041-A05A",
+        "DESCRIPTION": "FRAME PLATE LINER\n  INSERT",
+        "QUANTITY": 1,
+        "PRICE": 248611.0,
+        "CRITICALITY": "High",
+        "MTBF (H)": 2200.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM0525669",
+        "OEM PART NUMBER": "UP18132-U13A",
+        "DESCRIPTION": "DISCHARGE JOINT RING",
+        "QUANTITY": 1,
+        "PRICE": 970.0,
+        "CRITICALITY": "Medium",
+        "MTBF (H)": 10000.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM0525667",
+        "OEM PART NUMBER": "T239M-C23",
+        "DESCRIPTION": "RELEASE COLLAR",
+        "QUANTITY": 1,
+        "PRICE": 4230.0,
+        "CRITICALITY": "Medium",
+        "MTBF (H)": 2200.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM0533178",
+        "OEM PART NUMBER": "T109-S10",
+        "DESCRIPTION": "O-RING (69T164N439)",
+        "QUANTITY": 3,
+        "PRICE": 33.0,
+        "CRITICALITY": "Medium",
+        "MTBF (H)": 2200.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM0533177",
+        "OEM PART NUMBER": "T005",
+        "DESCRIPTION": "BEARING ASSEMBLY",
+        "QUANTITY": 1,
+        "PRICE": 256999.0,
+        "CRITICALITY": "High",
+        "MTBF (H)": 8000.0
+      }
+    ],
+    "Asset Model": "WARMAN 20/18-T-AH",
+    "MTBF (h)": 2400.0,
+    "Last Overhaul (date)": "",
+    "TechDetails": [],
+    "BOM": [
+      "T118-1-K31 • LANTERN RESTRICTOR • AM0525666",
+      "7189T1116-2018TUAH • PACKING SET OF 4 • AM1806819",
+      "H045M-E62 • GLAND BOLT • AM0533176",
+      "TU18145XDP1-W106 • IMPELLER 4VC-M • AM0533180",
+      "TU18078-D20 • STUFFING BOX • AM0533179",
+      "T044-K24 • GLAND ASSEMBLY • AM0525672",
+      "T076J221 • SHAFT SLEEVE • AM2081804",
+      "U18122-S10 • SEAL • AM0533182",
+      "U18124-U14A • VOLUTE COVER SEAL • AM0525677",
+      "U18110-A05A • VOLUTE LINER • AM0533175",
+      "U18083XDP1-W106 • THROATBUSH • AM0533181",
+      "U18060-U13A • INTAKE JOINT RING • AM0525668",
+      "U18041-A05A • FRAME PLATE LINER\n  INSERT • AM0533174",
+      "UP18132-U13A • DISCHARGE JOINT RING • AM0525669",
+      "T239M-C23 • RELEASE COLLAR • AM0525667",
+      "T109-S10 • O-RING (69T164N439) • AM0533178",
+      "T005 • BEARING ASSEMBLY • AM0533177"
+    ],
+    "CRR": [
+      {
+        "A": "AM0525666",
+        "B": "T118-1-K31",
+        "C": "LANTERN RESTRICTOR",
+        "D": "1",
+        "E": "MEDIUM",
+        "F": null,
+        "H": 0.0
+      },
+      {
+        "A": "AM1806819",
+        "B": "7189T1116-2018TUAH",
+        "C": "PACKING SET OF 4",
+        "D": "1",
+        "E": "MEDIUM",
+        "F": null,
+        "H": 0.0
+      },
+      {
+        "A": "AM0533176",
+        "B": "H045M-E62",
+        "C": "GLAND BOLT",
+        "D": "2",
+        "E": "MEDIUM",
+        "F": null,
+        "H": 0.0
+      },
+      {
+        "A": "AM0533180",
+        "B": "TU18145XDP1-W106",
+        "C": "IMPELLER 4VC-M",
+        "D": "1",
+        "E": "HIGH",
+        "F": null,
+        "H": 0.0
+      },
+      {
+        "A": "AM0533179",
+        "B": "TU18078-D20",
+        "C": "STUFFING BOX",
+        "D": "1",
+        "E": "HIGH",
+        "F": null,
+        "H": 0.0
+      },
+      {
+        "A": "AM0525672",
+        "B": "T044-K24",
+        "C": "GLAND ASSEMBLY",
+        "D": "1",
+        "E": "HIGH",
+        "F": null,
+        "H": 0.0
+      },
+      {
+        "A": "AM2081804",
+        "B": "T076J221",
+        "C": "SHAFT SLEEVE",
+        "D": "1",
+        "E": "HIGH",
+        "F": null,
+        "H": 0.0
+      },
+      {
+        "A": "AM0533182",
+        "B": "U18122-S10",
+        "C": "SEAL",
+        "D": "1",
+        "E": "LOW",
+        "F": null,
+        "H": 0.0
+      },
+      {
+        "A": "AM0525677",
+        "B": "U18124-U14A",
+        "C": "VOLUTE COVER SEAL",
+        "D": "2",
+        "E": "LOW",
+        "F": null,
+        "H": 0.0
+      },
+      {
+        "A": "AM0533175",
+        "B": "U18110-A05A",
+        "C": "VOLUTE LINER",
+        "D": "1",
+        "E": "HIGH",
+        "F": null,
+        "H": 0.0
+      },
+      {
+        "A": "AM0533181",
+        "B": "U18083XDP1-W106",
+        "C": "THROATBUSH",
+        "D": "1",
+        "E": "HIGH",
+        "F": null,
+        "H": 0.0
+      },
+      {
+        "A": "AM0525668",
+        "B": "U18060-U13A",
+        "C": "INTAKE JOINT RING",
+        "D": "1",
+        "E": "LOW",
+        "F": null,
+        "H": 0.0
+      },
+      {
+        "A": "AM0533174",
+        "B": "U18041-A05A",
+        "C": "FRAME PLATE LINER\n  INSERT",
+        "D": "1",
+        "E": "HIGH",
+        "F": null,
+        "H": 0.0
+      },
+      {
+        "A": "AM0525669",
+        "B": "UP18132-U13A",
+        "C": "DISCHARGE JOINT RING",
+        "D": "1",
+        "E": "LOW",
+        "F": null,
+        "H": 0.0
+      },
+      {
+        "A": "AM0525667",
+        "B": "T239M-C23",
+        "C": "RELEASE COLLAR",
+        "D": "1",
+        "E": "MEDIUM",
+        "F": null,
+        "H": 0.0
+      },
+      {
+        "A": "AM0533178",
+        "B": "T109-S10",
+        "C": "O-RING (69T164N439)",
+        "D": "3",
+        "E": "LOW",
+        "F": null,
+        "H": 0.0
+      },
+      {
+        "A": "AM0533177",
+        "B": "T005",
+        "C": "BEARING ASSEMBLY",
+        "D": "1",
+        "E": "HIGH",
+        "F": null,
+        "H": 0.0
+      }
+    ],
+    "CMMS Codes": [
+      "AM0525666",
+      "AM1806819",
+      "AM0533176",
+      "AM0533180",
+      "AM0533179",
+      "AM0525672",
+      "AM2081804",
+      "AM0533182",
+      "AM0525677",
+      "AM0533175",
+      "AM0533181",
+      "AM0525668",
+      "AM0533174",
+      "AM0525669",
+      "AM0525667",
+      "AM0533178",
+      "AM0533177"
+    ]
+  },
+  "408-PP-008": {
+    "Functional Location": "SECONDARY\n  MILL DISCHARGE PUMP #1",
+    "Asset Type": "Pump",
+    "Model": "WARMAN 550-M180-MCR",
+    "Technical Details": [
+      {
+        "Parameter": "Motor Power",
+        "Value": "1450",
+        "Unit": "kW",
+        "Notes": ""
+      },
+      {
+        "Parameter": "Sealing",
+        "Value": "L/F S-Box",
+        "Unit": "",
+        "Notes": ""
+      },
+      {
+        "Parameter": "Drive Type",
+        "Value": "COUPLED",
+        "Unit": "",
+        "Notes": ""
+      },
+      {
+        "Parameter": "Avg Daily (h)",
+        "Value": "14",
+        "Unit": "h/d",
+        "Notes": ""
+      },
+      {
+        "Parameter": "Max Capacity",
+        "Value": "5000.0",
+        "Unit": "m³/h",
+        "Notes": ""
+      },
+      {
+        "Parameter": "TDH",
+        "Value": "27.0",
+        "Unit": "m",
+        "Notes": ""
+      }
+    ],
+    "BOM Table": [
+      {
+        "CMMS MATERIAL CODE": "AM2454827",
+        "OEM PART NUMBER": "UMC55044C23 WEIRMIN",
+        "DESCRIPTION": "WEAR PLATE",
+        "QUANTITY": 1,
+        "PRICE": 300.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM2454828",
+        "OEM PART NUMBER": "UMC50872C3 WEIRMIN",
+        "DESCRIPTION": "IMPELLER",
+        "QUANTITY": 1,
+        "PRICE": 500.0
+      }
+    ],
+    "BOM": [
+      "UMC55044C23 WEIRMIN",
+      "UMC50872C3 WEIRMIN"
+    ],
+    "CMMS Codes": [
+      "AM2454827",
+      "AM2454828"
+    ],
+    "Criticality": "Medium"
+  },
+  "None": {
+    "Functional Location": "nan",
+    "Model": "nan",
+    "Criticality": "Medium"
+  },
+  "408-PP-002": {
+    "Functional Location": "PRIMARY\n  MILL DISCHARGE PUMP #2",
+    "Asset Type": "Pump",
+    "Model": "WARMAN\n  20/18-TU-AH",
+    "Technical Details": [
+      {
+        "Parameter": "FLOWRATE",
+        "Value": "4400",
+        "Unit": "m³/h",
+        "Notes": ""
+      },
+      {
+        "Parameter": "INSTALLED POWER",
+        "Value": "1450",
+        "Unit": "kW",
+        "Notes": ""
+      },
+      {
+        "Parameter": "PUMP MAXIMUM SPEED",
+        "Value": "352",
+        "Unit": "RPM",
+        "Notes": ""
+      },
+      {
+        "Parameter": "TDH",
+        "Value": "33",
+        "Unit": "m",
+        "Notes": ""
+      },
+      {
+        "Parameter": "",
+        "Value": "",
+        "Unit": "",
+        "Notes": ""
+      }
+    ],
+    "BOM Table": [
+      {
+        "CMMS MATERIAL CODE": "AM0525666",
+        "OEM PART NUMBER": "T118-1-K31",
+        "DESCRIPTION": "LANTERN RESTRICTOR",
+        "QUANTITY": 1,
+        "PRICE": 2234.0,
+        "CRITICALITY": "High",
+        "MTBF (H)": 0.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM1806819",
+        "OEM PART NUMBER": "7189T1116-2018TUAH",
+        "DESCRIPTION": "PACKING SET OF 4",
+        "QUANTITY": 1,
+        "PRICE": 920.0,
+        "CRITICALITY": "High",
+        "MTBF (H)": 0.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM0533176",
+        "OEM PART NUMBER": "H045M-E62",
+        "DESCRIPTION": "GLAND BOLT",
+        "QUANTITY": 2,
+        "PRICE": 64.0,
+        "CRITICALITY": "Medium",
+        "MTBF (H)": 0.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM0533180",
+        "OEM PART NUMBER": "TU18145XDP1-W106",
+        "DESCRIPTION": "IMPELLER 4VC-M",
+        "QUANTITY": 1,
+        "PRICE": 238000.0,
+        "CRITICALITY": "High",
+        "MTBF (H)": 0.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM0533179",
+        "OEM PART NUMBER": "TU18078-D20",
+        "DESCRIPTION": "STUFFING BOX",
+        "QUANTITY": 1,
+        "PRICE": 79480.0,
+        "CRITICALITY": "High",
+        "MTBF (H)": 0.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM0525672",
+        "OEM PART NUMBER": "T044-K24",
+        "DESCRIPTION": "GLAND ASSEMBLY",
+        "QUANTITY": 1,
+        "PRICE": 2450.0,
+        "CRITICALITY": "Medium",
+        "MTBF (H)": 0.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM2081804",
+        "OEM PART NUMBER": "T076J221",
+        "DESCRIPTION": "SHAFT SLEEVE",
+        "QUANTITY": 1,
+        "PRICE": 102537.0,
+        "CRITICALITY": "High",
+        "MTBF (H)": 0.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM0533182",
+        "OEM PART NUMBER": "U18122-S10",
+        "DESCRIPTION": "SEAL",
+        "QUANTITY": 1,
+        "PRICE": 178.0,
+        "CRITICALITY": "Medium",
+        "MTBF (H)": 0.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM0525677",
+        "OEM PART NUMBER": "U18124-U14A",
+        "DESCRIPTION": "VOLUTE COVER SEAL",
+        "QUANTITY": 2,
+        "PRICE": 202.0,
+        "CRITICALITY": "Medium",
+        "MTBF (H)": 0.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM0533175",
+        "OEM PART NUMBER": "U18110-A05A",
+        "DESCRIPTION": "VOLUTE LINER",
+        "QUANTITY": 1,
+        "PRICE": 372499.0,
+        "CRITICALITY": "High",
+        "MTBF (H)": 0.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM0533181",
+        "OEM PART NUMBER": "U18083XDP1-W106",
+        "DESCRIPTION": "THROATBUSH",
+        "QUANTITY": 1,
+        "PRICE": 244530.0,
+        "CRITICALITY": "High",
+        "MTBF (H)": 0.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM0525668",
+        "OEM PART NUMBER": "U18060-U13A",
+        "DESCRIPTION": "INTAKE JOINT RING",
+        "QUANTITY": 1,
+        "PRICE": 875.0,
+        "CRITICALITY": "Medium",
+        "MTBF (H)": 0.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM0533174",
+        "OEM PART NUMBER": "U18041-A05A",
+        "DESCRIPTION": "FRAME PLATE LINER\n  INSERT",
+        "QUANTITY": 1,
+        "PRICE": 248611.0,
+        "CRITICALITY": "High",
+        "MTBF (H)": 0.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM0525669",
+        "OEM PART NUMBER": "UP18132-U13A",
+        "DESCRIPTION": "DISCHARGE JOINT RING",
+        "QUANTITY": 1,
+        "PRICE": 970.0,
+        "CRITICALITY": "Medium",
+        "MTBF (H)": 0.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM0525667",
+        "OEM PART NUMBER": "T239M-C23",
+        "DESCRIPTION": "RELEASE COLLAR",
+        "QUANTITY": 1,
+        "PRICE": 4230.0,
+        "CRITICALITY": "Medium",
+        "MTBF (H)": 0.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM0533178",
+        "OEM PART NUMBER": "T109-S10",
+        "DESCRIPTION": "O-RING (69T164N439)",
+        "QUANTITY": 3,
+        "PRICE": 33.0,
+        "CRITICALITY": "Medium",
+        "MTBF (H)": 0.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM0533177",
+        "OEM PART NUMBER": "T005",
+        "DESCRIPTION": "BEARING ASSEMBLY",
+        "QUANTITY": 1,
+        "PRICE": 256999.0,
+        "CRITICALITY": "High",
+        "MTBF (H)": 0.0
+      },
+      {
+        "CMMS MATERIAL CODE": "None",
+        "OEM PART NUMBER": "None",
+        "DESCRIPTION": "None",
+        "QUANTITY": 1,
+        "PRICE": 0.0,
+        "CRITICALITY": "Medium",
+        "MTBF (H)": 0.0
+      },
+      {
+        "CMMS MATERIAL CODE": "None",
+        "OEM PART NUMBER": "None",
+        "DESCRIPTION": "None",
+        "QUANTITY": 1,
+        "PRICE": 0.0,
+        "CRITICALITY": "Medium",
+        "MTBF (H)": 0.0
+      },
+      {
+        "CMMS MATERIAL CODE": "None",
+        "OEM PART NUMBER": "None",
+        "DESCRIPTION": "None",
+        "QUANTITY": 1,
+        "PRICE": 0.0,
+        "CRITICALITY": "Medium",
+        "MTBF (H)": 0.0
+      }
+    ],
+    "BOM": [
+      "T118-1-K31 • LANTERN RESTRICTOR • AM0525666",
+      "7189T1116-2018TUAH • PACKING SET OF 4 • AM1806819",
+      "H045M-E62 • GLAND BOLT • AM0533176",
+      "TU18145XDP1-W106 • IMPELLER 4VC-M • AM0533180",
+      "TU18078-D20 • STUFFING BOX • AM0533179",
+      "T044-K24 • GLAND ASSEMBLY • AM0525672",
+      "T076J221 • SHAFT SLEEVE • AM2081804",
+      "U18122-S10 • SEAL • AM0533182",
+      "U18124-U14A • VOLUTE COVER SEAL • AM0525677",
+      "U18110-A05A • VOLUTE LINER • AM0533175",
+      "U18083XDP1-W106 • THROATBUSH • AM0533181",
+      "U18060-U13A • INTAKE JOINT RING • AM0525668",
+      "U18041-A05A • FRAME PLATE LINER\n  INSERT • AM0533174",
+      "UP18132-U13A • DISCHARGE JOINT RING • AM0525669",
+      "T239M-C23 • RELEASE COLLAR • AM0525667",
+      "T109-S10 • O-RING (69T164N439) • AM0533178",
+      "T005 • BEARING ASSEMBLY • AM0533177",
+      "None • None • None",
+      "None • None • None",
+      "None • None • None"
+    ],
+    "CMMS Codes": [
+      "AM0525666",
+      "AM1806819",
+      "AM0533176",
+      "AM0533180",
+      "AM0533179",
+      "AM0525672",
+      "AM2081804",
+      "AM0533182",
+      "AM0525677",
+      "AM0533175",
+      "AM0533181",
+      "AM0525668",
+      "AM0533174",
+      "AM0525669",
+      "AM0525667",
+      "AM0533178",
+      "AM0533177",
+      "None",
+      "None",
+      "None"
+    ],
+    "Criticality": "Medium",
+    "MTBF (Hours)": 2200.0
+  },
+  "408-PP-009": {
+    "Functional Location": "SECONDARY\n  MILL DISCHARGE PUMP #2",
+    "Model": "WARMAN 550-M180-MCR",
+    "Criticality": "Medium",
+    "Technical Details": [
+      {
+        "Parameter": "FLOWRATE",
+        "Value": "",
+        "Unit": "m3/hr",
+        "Notes": ""
+      },
+      {
+        "Parameter": "DENSITY ",
+        "Value": "",
+        "Unit": "kg/l",
+        "Notes": ""
+      },
+      {
+        "Parameter": "TOTA DYNAMIC HEAD",
+        "Value": "",
+        "Unit": "m",
+        "Notes": ""
+      },
+      {
+        "Parameter": "",
+        "Value": "",
+        "Unit": "",
+        "Notes": ""
+      },
+      {
+        "Parameter": "",
+        "Value": "",
+        "Unit": "",
+        "Notes": ""
+      }
+    ],
+    "Asset Type": "Pump",
+    "BOM Table": [
+      {
+        "CMMS MATERIAL CODE": "AM2445823",
+        "OEM PART NUMBER": "UMC55044C23\n  WEIRMIN",
+        "DESCRIPTION": "ASY GLAND C23",
+        "QUANTITY": 1,
+        "PRICE": 0.0,
+        "MTBF (h)": 0.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM2445824",
+        "OEM PART NUMBER": ",UMC55078C23 WEIRMIN",
+        "DESCRIPTION": "BOX STUFFING 550MCR",
+        "QUANTITY": 1,
+        "PRICE": 0.0,
+        "MTBF (h)": 0.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM2445825",
+        "OEM PART NUMBER": ",UMCR55083R55\n  WEIRMIN",
+        "DESCRIPTION": "BUSH THROAT R55 550",
+        "QUANTITY": 1,
+        "PRICE": 0.0,
+        "MTBF (h)": 0.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM2445826",
+        "OEM PART NUMBER": ",UMC55018R55 WEIRMIN",
+        "DESCRIPTION": "COVER INSERT PLATE",
+        "QUANTITY": 1,
+        "PRICE": 0.0,
+        "MTBF (h)": 0.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM2445827",
+        "OEM PART NUMBER": "I,M180MC55145EL1\n  WEIRMIN",
+        "DESCRIPTION": "MPELLER A08",
+        "QUANTITY": 1,
+        "PRICE": 0.0,
+        "MTBF (h)": 0.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM2445828",
+        "OEM PART NUMBER": ",UMCR55041R55\n  WEIRMIN",
+        "DESCRIPTION": "LINER PLATE INSERT",
+        "QUANTITY": 1,
+        "PRICE": 0.0,
+        "MTBF (h)": 0.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM2445829",
+        "OEM PART NUMBER": "UMC55043R55 WEIRMIN",
+        "DESCRIPTION": "PLATE INSERT FRAME,",
+        "QUANTITY": 1,
+        "PRICE": 0.0,
+        "MTBF (h)": 0.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM2445830",
+        "OEM PART NUMBER": ",UMC55118K31 WEIRMIN",
+        "DESCRIPTION": "RESTRICTOR LANTERN",
+        "QUANTITY": 1,
+        "PRICE": 0.0,
+        "MTBF (h)": 0.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM2445831",
+        "OEM PART NUMBER": ",UMC55372R55 WEIRMIN",
+        "DESCRIPTION": "RING INTAKE JOINT",
+        "QUANTITY": 1,
+        "PRICE": 0.0,
+        "MTBF (h)": 0.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM2445832",
+        "OEM PART NUMBER": ",UMCR55132 WEIRMIN",
+        "DESCRIPTION": "RING JOINT DISCHARGE",
+        "QUANTITY": 1,
+        "PRICE": 0.0,
+        "MTBF (h)": 0.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM2445833",
+        "OEM PART NUMBER": "M180076C21 WEIRMIN",
+        "DESCRIPTION": "SLEEVE SHAFT C21,",
+        "QUANTITY": 1,
+        "PRICE": 0.0,
+        "MTBF (h)": 0.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM2445834",
+        "OEM PART NUMBER": ",M180076-W653\n  WEIRMIN",
+        "DESCRIPTION": "SLEEVE SHAFT M180",
+        "QUANTITY": 1,
+        "PRICE": 0.0,
+        "MTBF (h)": 0.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM2445783",
+        "OEM PART NUMBER": ",M180005 WEIRMIN",
+        "DESCRIPTION": "ASSY BEARING GREASE\n  M180",
+        "QUANTITY": 1,
+        "PRICE": 0.0,
+        "MTBF (h)": 0.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM2445806",
+        "OEM PART NUMBER": "35T304N278",
+        "DESCRIPTION": "O-RNG 3.5X304 NITRILE",
+        "QUANTITY": 2,
+        "PRICE": 0.0,
+        "MTBF (h)": 0.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM2445780",
+        "OEM PART NUMBER": "M24H1-60VW",
+        "DESCRIPTION": "HEXAGON BOLTS",
+        "QUANTITY": 4,
+        "PRICE": 0.0,
+        "MTBF (h)": 0.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM2445779",
+        "OEM PART NUMBER": "UMC55045C23",
+        "DESCRIPTION": "GLAND BOLTS",
+        "QUANTITY": 4,
+        "PRICE": 0.0,
+        "MTBF (h)": 0.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM2445808",
+        "OEM PART NUMBER": "UMC55111Q25",
+        "DESCRIPTION": "SET PACKING",
+        "QUANTITY": 2,
+        "PRICE": 0.0,
+        "MTBF (h)": 0.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM2445807",
+        "OEM PART NUMBER": "69T228N447,U109",
+        "DESCRIPTION": "O RING ",
+        "QUANTITY": 3,
+        "PRICE": 0.0,
+        "MTBF (h)": 0.0
+      }
+    ],
+    "BOM": [
+      "ASY GLAND C23",
+      "BOX STUFFING 550MCR",
+      "BUSH THROAT R55 550",
+      "COVER INSERT PLATE",
+      "MPELLER A08",
+      "LINER PLATE INSERT",
+      "PLATE INSERT FRAME,",
+      "RESTRICTOR LANTERN",
+      "RING INTAKE JOINT",
+      "RING JOINT DISCHARGE",
+      "SLEEVE SHAFT C21,",
+      "SLEEVE SHAFT M180",
+      "ASSY BEARING GREASE\n  M180",
+      "O-RNG 3.5X304 NITRILE",
+      "HEXAGON BOLTS",
+      "GLAND BOLTS",
+      "SET PACKING",
+      "O RING"
+    ],
+    "CMMS Codes": [
+      "AM2445823",
+      "AM2445824",
+      "AM2445825",
+      "AM2445826",
+      "AM2445827",
+      "AM2445828",
+      "AM2445829",
+      "AM2445830",
+      "AM2445831",
+      "AM2445832",
+      "AM2445833",
+      "AM2445834",
+      "AM2445783",
+      "AM2445806",
+      "AM2445780",
+      "AM2445779",
+      "AM2445808",
+      "AM2445807"
+    ]
+  },
+  "441-PP-011": {
+    "Functional Location": "FINAL TAILS DISPOSAL PUMPS TRAIN A PUMP 1",
+    "Asset Type": "Pump",
+    "Model": "WARMAN 12/10-FF-AHP",
+    "Technical Details": [
+      {
+        "Parameter": "FLOWRATE",
+        "Value": "1800",
+        "Unit": "m3/hr",
+        "Notes": ""
+      },
+      {
+        "Parameter": "DENSITY",
+        "Value": "1.62",
+        "Unit": "kg/l",
+        "Notes": ""
+      },
+      {
+        "Parameter": "TOTAL DYNAMIC HEAD",
+        "Value": "29.3",
+        "Unit": "m",
+        "Notes": ""
+      },
+      {
+        "Parameter": "POWER INSTALLED ",
+        "Value": "330",
+        "Unit": "kW",
+        "Notes": ""
+      },
+      {
+        "Parameter": "PUMP SPEED",
+        "Value": "633",
+        "Unit": "RPM",
+        "Notes": ""
+      }
+    ],
+    "BOM Table": [
+      {
+        "CMMS MATERIAL CODE": "AM0054779",
+        "OEM PART NUMBER": "F001M-E62",
+        "DESCRIPTION": "ADJUSTING\n  SCREW ",
+        "QUANTITY": 1,
+        "PRICE": 0.0,
+        "MTBF (h)": 17600.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM0054771",
+        "OEM PART NUMBER": "F011-E62",
+        "DESCRIPTION": "CLAMP WASHER",
+        "QUANTITY": 4,
+        "PRICE": 0.0,
+        "MTBF (h)": 17600.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM0054733",
+        "OEM PART NUMBER": "F012M-E62",
+        "DESCRIPTION": "CLAMP BOLT",
+        "QUANTITY": 4,
+        "PRICE": 0.0,
+        "MTBF (h)": 1700.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM0054790",
+        "OEM PART NUMBER": "F109-S10",
+        "DESCRIPTION": "SHAFT O-RING",
+        "QUANTITY": 2,
+        "PRICE": 0.0,
+        "MTBF (h)": 4400.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM0054847",
+        "OEM PART NUMBER": "     ",
+        "DESCRIPTION": "FRAME PLATE STUD",
+        "QUANTITY": 3,
+        "PRICE": 0.0,
+        "MTBF (h)": 17600.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM0054849",
+        "OEM PART NUMBER": "FAM075-D20",
+        "DESCRIPTION": "SHAFT SLEEVE",
+        "QUANTITY": 1,
+        "PRICE": 0.0,
+        "MTBF (h)": 4400.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM2003927",
+        "OEM PART NUMBER": "FAM10147WRT1R55",
+        "DESCRIPTION": "IMPELLER 4VC-R",
+        "QUANTITY": 1,
+        "PRICE": 0.0,
+        "MTBF (h)": 4400.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM0054834",
+        "OEM PART NUMBER": "FAM117-E62",
+        "DESCRIPTION": "SHAFT SPACER",
+        "QUANTITY": 1,
+        "PRICE": 0.0,
+        "MTBF (h)": 4400.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM2174897",
+        "OEM PART NUMBER": "\n\n    GP118-1S-K31",
+        "DESCRIPTION": "LANTERN RESTRICTOR-SPLIT",
+        "QUANTITY": 1,
+        "PRICE": 0.0,
+        "MTBF (h)": 4400.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM2174896",
+        "OEM PART NUMBER": "FAM075-J21",
+        "DESCRIPTION": "SHAFT SLEEVE, HARDENED.",
+        "QUANTITY": 1,
+        "PRICE": 0.0,
+        "MTBF (h)": 8800.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM0054850",
+        "OEM PART NUMBER": "FAM239-E62",
+        "DESCRIPTION": "RELEASE COLLAR",
+        "QUANTITY": 1,
+        "PRICE": 0.0,
+        "MTBF (h)": 4400.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM0722678",
+        "OEM PART NUMBER": "FFAM005M",
+        "DESCRIPTION": "FFAM - BEARING ASSEMBLY ",
+        "QUANTITY": 1,
+        "PRICE": 0.0,
+        "MTBF (h)": 8800.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM0054851",
+        "OEM PART NUMBER": "G045M-E62",
+        "DESCRIPTION": "GLAND BOLT",
+        "QUANTITY": 4,
+        "PRICE": 0.0,
+        "MTBF (h)": 2976.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM0756822",
+        "OEM PART NUMBER": "G10018MTL1MR55",
+        "DESCRIPTION": "COVER PLATE LINER",
+        "QUANTITY": 1,
+        "PRICE": 0.0,
+        "MTBF (h)": 4400.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM0756823",
+        "OEM PART NUMBER": "G10036MTL1MR55",
+        "DESCRIPTION": "FRAME PLATE LINER",
+        "QUANTITY": 1,
+        "PRICE": 0.0,
+        "MTBF (h)": 4400.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM0533183",
+        "OEM PART NUMBER": "G10060-U13A",
+        "DESCRIPTION": "INTAKE JOINT",
+        "QUANTITY": 1,
+        "PRICE": 0.0,
+        "MTBF (h)": 4400.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM2003922",
+        "OEM PART NUMBER": "G10083WRT1R55",
+        "DESCRIPTION": "THROATBUSH",
+        "QUANTITY": 1,
+        "PRICE": 0.0,
+        "MTBF (h)": 4400.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM0055176",
+        "OEM PART NUMBER": "G10124-U14A",
+        "DESCRIPTION": "VOLUTE COVER SEAL",
+        "QUANTITY": 1,
+        "PRICE": 0.0,
+        "MTBF (h)": 4400.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM0054860",
+        "OEM PART NUMBER": "G109-S10",
+        "DESCRIPTION": "SHAFT O-RING",
+        "QUANTITY": 2,
+        "PRICE": 0.0,
+        "MTBF (h)": 4400.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM0054868",
+        "OEM PART NUMBER": "G117-E62",
+        "DESCRIPTION": "SHAFT SPACER",
+        "QUANTITY": 1,
+        "PRICE": 0.0,
+        "MTBF (h)": 4400.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM0054862",
+        "OEM PART NUMBER": "G122-R11A",
+        "DESCRIPTION": "SEAL",
+        "QUANTITY": 1,
+        "PRICE": 0.0,
+        "MTBF (h)": 4400.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM0055122",
+        "OEM PART NUMBER": "GP044-K24",
+        "DESCRIPTION": "GLAND ASSEMBLY",
+        "QUANTITY": 1,
+        "PRICE": 0.0,
+        "MTBF (h)": 4400.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM0055123",
+        "OEM PART NUMBER": "GP078-D23",
+        "DESCRIPTION": "STUFFING BOX",
+        "QUANTITY": 1,
+        "PRICE": 0.0,
+        "MTBF (h)": 4400.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM1786061",
+        "OEM PART NUMBER": "GP10013X-D20",
+        "DESCRIPTION": "COVER PLATE",
+        "QUANTITY": 1,
+        "PRICE": 0.0,
+        "MTBF (h)": 35200.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM0591427",
+        "OEM PART NUMBER": "GP10015MX-E10",
+        "DESCRIPTION": "COVER PLATE BOLT",
+        "QUANTITY": 14,
+        "PRICE": 0.0,
+        "MTBF (h)": 17600.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM1798579",
+        "OEM PART NUMBER": "GP10032X-D20",
+        "DESCRIPTION": "FRAME PLATE",
+        "QUANTITY": 1,
+        "PRICE": 0.0,
+        "MTBF (h)": 35200.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM1806820",
+        "OEM PART NUMBER": "7189GP111/5-1210GP",
+        "DESCRIPTION": "PACKING SET OF 5",
+        "QUANTITY": 1,
+        "PRICE": 0.0,
+        "MTBF (h)": 744.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM0055125",
+        "OEM PART NUMBER": "GP118-1-K31",
+        "DESCRIPTION": "LANTERN RESTRICTOR",
+        "QUANTITY": 1,
+        "PRICE": 0.0,
+        "MTBF (h)": 4400.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM0525674",
+        "OEM PART NUMBER": "GP259-K24",
+        "DESCRIPTION": "PACKING RETAINER",
+        "QUANTITY": 1,
+        "PRICE": 0.0,
+        "MTBF (h)": 4400.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM2092829",
+        "OEM PART NUMBER": "SPC425X8 MOTOR PULLEY",
+        "DESCRIPTION": "SPC425 MOTOR PULLEY (011-015,017-021)",
+        "QUANTITY": 1,
+        "PRICE": 0.0,
+        "MTBF (h)": 13200.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM0006420",
+        "OEM PART NUMBER": "SPC1000X8 PUMP PULLEY",
+        "DESCRIPTION": "SPC1000 PUMP PULLEY (011-015,017-021)",
+        "QUANTITY": 1,
+        "PRICE": 0.0,
+        "MTBF (h)": 13200.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AE0051084",
+        "OEM PART NUMBER": "120MM PUMP TAPERLOCKBUSH",
+        "DESCRIPTION": "PUMP SHAFT TAPERLOCKBUSH",
+        "QUANTITY": 1,
+        "PRICE": 0.0,
+        "MTBF (h)": 13200.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AE0039905",
+        "OEM PART NUMBER": "100MM MOTOR TAPERLOCKBUSH",
+        "DESCRIPTION": "MOTOR SHAFT TAPERLOCKBUSH",
+        "QUANTITY": 1,
+        "PRICE": 0.0,
+        "MTBF (h)": 13200.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM2035124",
+        "OEM PART NUMBER": "SPC4000 V BELTS",
+        "DESCRIPTION": "SPC4000 REDPOWER V BELTS",
+        "QUANTITY": 8,
+        "PRICE": 0.0,
+        "MTBF (h)": 4400.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM0006412",
+        "OEM PART NUMBER": "SPC400X8 MOTOR PULLEY",
+        "DESCRIPTION": "SPC400 MOTOR PULLEY (016 & 022)",
+        "QUANTITY": 1,
+        "PRICE": 0.0,
+        "MTBF (h)": 4400.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM0964246",
+        "OEM PART NUMBER": "SPC800 X 8 GROOVE PUMP PULLEY",
+        "DESCRIPTION": "SPC800 PUMP PULLEY (016 & 022)",
+        "QUANTITY": 1,
+        "PRICE": 0.0,
+        "MTBF (h)": 44400.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM0814286",
+        "OEM PART NUMBER": "SPC3550 V BELTS",
+        "DESCRIPTION": "SPC3550 REDPOWER V BELTS",
+        "QUANTITY": 8,
+        "PRICE": 0.0,
+        "MTBF (h)": 4400.0
+      }
+    ],
+    "BOM": [
+      "ADJUSTING\n  SCREW",
+      "CLAMP WASHER",
+      "CLAMP BOLT",
+      "SHAFT O-RING",
+      "FRAME PLATE STUD",
+      "SHAFT SLEEVE",
+      "IMPELLER 4VC-R",
+      "SHAFT SPACER",
+      "LANTERN RESTRICTOR-SPLIT",
+      "SHAFT SLEEVE, HARDENED.",
+      "RELEASE COLLAR",
+      "FFAM - BEARING ASSEMBLY",
+      "GLAND BOLT",
+      "COVER PLATE LINER",
+      "FRAME PLATE LINER",
+      "INTAKE JOINT",
+      "THROATBUSH",
+      "VOLUTE COVER SEAL",
+      "SHAFT O-RING",
+      "SHAFT SPACER",
+      "SEAL",
+      "GLAND ASSEMBLY",
+      "STUFFING BOX",
+      "COVER PLATE",
+      "COVER PLATE BOLT",
+      "FRAME PLATE",
+      "PACKING SET OF 5",
+      "LANTERN RESTRICTOR",
+      "PACKING RETAINER",
+      "SPC425 MOTOR PULLEY (011-015,017-021)",
+      "SPC1000 PUMP PULLEY (011-015,017-021)",
+      "PUMP SHAFT TAPERLOCKBUSH",
+      "MOTOR SHAFT TAPERLOCKBUSH",
+      "SPC4000 REDPOWER V BELTS",
+      "SPC400 MOTOR PULLEY (016 & 022)",
+      "SPC800 PUMP PULLEY (016 & 022)",
+      "SPC3550 REDPOWER V BELTS"
+    ],
+    "CMMS Codes": [
+      "AM0054779",
+      "AM0054771",
+      "AM0054733",
+      "AM0054790",
+      "AM0054847",
+      "AM0054849",
+      "AM2003927",
+      "AM0054834",
+      "AM2174897",
+      "AM2174896",
+      "AM0054850",
+      "AM0722678",
+      "AM0054851",
+      "AM0756822",
+      "AM0756823",
+      "AM0533183",
+      "AM2003922",
+      "AM0055176",
+      "AM0054860",
+      "AM0054868",
+      "AM0054862",
+      "AM0055122",
+      "AM0055123",
+      "AM1786061",
+      "AM0591427",
+      "AM1798579",
+      "AM1806820",
+      "AM0055125",
+      "AM0525674",
+      "AM2092829",
+      "AM0006420",
+      "AE0051084",
+      "AE0039905",
+      "AM2035124",
+      "AM0006412",
+      "AM0964246",
+      "AM0814286"
+    ],
+    "Criticality": "Medium"
+  },
+  "441-PP-012": {
+    "Functional Location": "FINAL TAILS DISPOSAL PUMPS TRAIN A PUMP 2",
+    "Asset Type": "Pump",
+    "Model": "WARMAN 12/10-FF-AHP",
+    "Technical Details": [
+      {
+        "Parameter": "",
+        "Value": "",
+        "Unit": "",
+        "Notes": ""
+      },
+      {
+        "Parameter": "",
+        "Value": "",
+        "Unit": "",
+        "Notes": ""
+      },
+      {
+        "Parameter": "",
+        "Value": "",
+        "Unit": "",
+        "Notes": ""
+      },
+      {
+        "Parameter": "",
+        "Value": "",
+        "Unit": "",
+        "Notes": ""
+      },
+      {
+        "Parameter": "",
+        "Value": "",
+        "Unit": "",
+        "Notes": ""
+      }
+    ],
+    "BOM Table": [
+      {
+        "CMMS MATERIAL CODE": "",
+        "OEM PART NUMBER": "",
+        "DESCRIPTION": "",
+        "QUANTITY": 1,
+        "PRICE": 0.0,
+        "MTBF (h)": 0.0
+      },
+      {
+        "CMMS MATERIAL CODE": "",
+        "OEM PART NUMBER": "",
+        "DESCRIPTION": "",
+        "QUANTITY": 1,
+        "PRICE": 0.0,
+        "MTBF (h)": 0.0
+      },
+      {
+        "CMMS MATERIAL CODE": "",
+        "OEM PART NUMBER": "",
+        "DESCRIPTION": "",
+        "QUANTITY": 1,
+        "PRICE": 0.0,
+        "MTBF (h)": 0.0
+      },
+      {
+        "CMMS MATERIAL CODE": "",
+        "OEM PART NUMBER": "",
+        "DESCRIPTION": "",
+        "QUANTITY": 1,
+        "PRICE": 0.0,
+        "MTBF (h)": 0.0
+      },
+      {
+        "CMMS MATERIAL CODE": "",
+        "OEM PART NUMBER": "",
+        "DESCRIPTION": "",
+        "QUANTITY": 1,
+        "PRICE": 0.0,
+        "MTBF (h)": 0.0
+      }
+    ],
+    "BOM": [],
+    "CMMS Codes": [],
+    "Criticality": "Medium"
+  },
+  "441-PP-013": {
+    "Functional Location": "FINAL TAILS DISPOSAL PUMPS TRAIN A PUMP 3",
+    "Asset Type": "Pump",
+    "Model": "WARMAN 12/10-FF-AHP",
+    "Technical Details": [
+      {
+        "Parameter": "",
+        "Value": "",
+        "Unit": "",
+        "Notes": ""
+      },
+      {
+        "Parameter": "",
+        "Value": "",
+        "Unit": "",
+        "Notes": ""
+      },
+      {
+        "Parameter": "",
+        "Value": "",
+        "Unit": "",
+        "Notes": ""
+      },
+      {
+        "Parameter": "",
+        "Value": "",
+        "Unit": "",
+        "Notes": ""
+      },
+      {
+        "Parameter": "",
+        "Value": "",
+        "Unit": "",
+        "Notes": ""
+      }
+    ],
+    "BOM Table": [
+      {
+        "CMMS MATERIAL CODE": "AM0054779",
+        "OEM PART NUMBER": "F001M-E62",
+        "DESCRIPTION": "ADJUSTING\n  SCREW ",
+        "QUANTITY": 100,
+        "PRICE": 0.0,
+        "MTBF (h)": 0.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM0054771",
+        "OEM PART NUMBER": "F011-E62",
+        "DESCRIPTION": "CLAMP WASHER",
+        "QUANTITY": 400,
+        "PRICE": 0.0,
+        "MTBF (h)": 0.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM0054733",
+        "OEM PART NUMBER": "F012M-E62",
+        "DESCRIPTION": "CLAMP BOLT",
+        "QUANTITY": 400,
+        "PRICE": 0.0,
+        "MTBF (h)": 0.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM0054790",
+        "OEM PART NUMBER": "F109-S10",
+        "DESCRIPTION": "SHAFT O-RING",
+        "QUANTITY": 200,
+        "PRICE": 0.0,
+        "MTBF (h)": 0.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM0054847",
+        "OEM PART NUMBER": "     ",
+        "DESCRIPTION": "FRAME PLATE STUD",
+        "QUANTITY": 300,
+        "PRICE": 0.0,
+        "MTBF (h)": 0.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM0054849",
+        "OEM PART NUMBER": "FAM075-D20",
+        "DESCRIPTION": "SHAFT SLEEVE",
+        "QUANTITY": 100,
+        "PRICE": 0.0,
+        "MTBF (h)": 0.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM2003927",
+        "OEM PART NUMBER": "FAM10147WRT1R55",
+        "DESCRIPTION": "IMPELLER 4VC-R",
+        "QUANTITY": 100,
+        "PRICE": 0.0,
+        "MTBF (h)": 0.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM0054834",
+        "OEM PART NUMBER": "FAM117-E62",
+        "DESCRIPTION": "SHAFT SPACER",
+        "QUANTITY": 100,
+        "PRICE": 0.0,
+        "MTBF (h)": 0.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM2174897",
+        "OEM PART NUMBER": "\n\n    GP118-1S-K31",
+        "DESCRIPTION": "LANTERN RESTRICTOR-SPLIT",
+        "QUANTITY": 100,
+        "PRICE": 0.0,
+        "MTBF (h)": 0.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM2174896",
+        "OEM PART NUMBER": "FAM075-J21",
+        "DESCRIPTION": "SHAFT SLEEVE, HARDENED.",
+        "QUANTITY": 100,
+        "PRICE": 0.0,
+        "MTBF (h)": 0.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM0054850",
+        "OEM PART NUMBER": "FAM239-E62",
+        "DESCRIPTION": "RELEASE COLLAR",
+        "QUANTITY": 100,
+        "PRICE": 0.0,
+        "MTBF (h)": 0.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM0722678",
+        "OEM PART NUMBER": "FFAM005M",
+        "DESCRIPTION": "FFAM - BEARING ASSEMBLY ",
+        "QUANTITY": 100,
+        "PRICE": 0.0,
+        "MTBF (h)": 0.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM0054851",
+        "OEM PART NUMBER": "G045M-E62",
+        "DESCRIPTION": "GLAND BOLT",
+        "QUANTITY": 400,
+        "PRICE": 0.0,
+        "MTBF (h)": 0.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM0756822",
+        "OEM PART NUMBER": "G10018MTL1MR55",
+        "DESCRIPTION": "COVER PLATE LINER",
+        "QUANTITY": 100,
+        "PRICE": 0.0,
+        "MTBF (h)": 0.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM0756823",
+        "OEM PART NUMBER": "G10036MTL1MR55",
+        "DESCRIPTION": "FRAME PLATE LINER",
+        "QUANTITY": 100,
+        "PRICE": 0.0,
+        "MTBF (h)": 0.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM0533183",
+        "OEM PART NUMBER": "G10060-U13A",
+        "DESCRIPTION": "INTAKE JOINT",
+        "QUANTITY": 100,
+        "PRICE": 0.0,
+        "MTBF (h)": 0.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM2003922",
+        "OEM PART NUMBER": "G10083WRT1R55",
+        "DESCRIPTION": "THROATBUSH",
+        "QUANTITY": 100,
+        "PRICE": 0.0,
+        "MTBF (h)": 0.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM0055176",
+        "OEM PART NUMBER": "G10124-U14A",
+        "DESCRIPTION": "VOLUTE COVER SEAL",
+        "QUANTITY": 100,
+        "PRICE": 0.0,
+        "MTBF (h)": 0.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM0054860",
+        "OEM PART NUMBER": "G109-S10",
+        "DESCRIPTION": "SHAFT O-RING",
+        "QUANTITY": 200,
+        "PRICE": 0.0,
+        "MTBF (h)": 0.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM0054868",
+        "OEM PART NUMBER": "G117-E62",
+        "DESCRIPTION": "SHAFT SPACER",
+        "QUANTITY": 100,
+        "PRICE": 0.0,
+        "MTBF (h)": 0.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM0054862",
+        "OEM PART NUMBER": "G122-R11A",
+        "DESCRIPTION": "SEAL",
+        "QUANTITY": 100,
+        "PRICE": 0.0,
+        "MTBF (h)": 0.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM0055122",
+        "OEM PART NUMBER": "GP044-K24",
+        "DESCRIPTION": "GLAND ASSEMBLY",
+        "QUANTITY": 100,
+        "PRICE": 0.0,
+        "MTBF (h)": 0.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM0055123",
+        "OEM PART NUMBER": "GP078-D23",
+        "DESCRIPTION": "STUFFING BOX",
+        "QUANTITY": 100,
+        "PRICE": 0.0,
+        "MTBF (h)": 0.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM1786061",
+        "OEM PART NUMBER": "GP10013X-D20",
+        "DESCRIPTION": "COVER PLATE",
+        "QUANTITY": 100,
+        "PRICE": 0.0,
+        "MTBF (h)": 0.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM0591427",
+        "OEM PART NUMBER": "GP10015MX-E10",
+        "DESCRIPTION": "COVER PLATE BOLT",
+        "QUANTITY": 1400,
+        "PRICE": 0.0,
+        "MTBF (h)": 0.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM1798579",
+        "OEM PART NUMBER": "GP10032X-D20",
+        "DESCRIPTION": "FRAME PLATE",
+        "QUANTITY": 100,
+        "PRICE": 0.0,
+        "MTBF (h)": 0.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM1806820",
+        "OEM PART NUMBER": "7189GP111/5-1210GP",
+        "DESCRIPTION": "PACKING SET OF 5",
+        "QUANTITY": 100,
+        "PRICE": 0.0,
+        "MTBF (h)": 0.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM0055125",
+        "OEM PART NUMBER": "GP118-1-K31",
+        "DESCRIPTION": "LANTERN RESTRICTOR",
+        "QUANTITY": 100,
+        "PRICE": 0.0,
+        "MTBF (h)": 0.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM0525674",
+        "OEM PART NUMBER": "GP259-K24",
+        "DESCRIPTION": "PACKING RETAINER",
+        "QUANTITY": 100,
+        "PRICE": 0.0,
+        "MTBF (h)": 0.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM2092829",
+        "OEM PART NUMBER": "SPC425X8 MOTOR PULLEY",
+        "DESCRIPTION": "SPC425 MOTOR PULLEY (011-015,017-021)",
+        "QUANTITY": 100,
+        "PRICE": 0.0,
+        "MTBF (h)": 0.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM0006420",
+        "OEM PART NUMBER": "SPC1000X8 PUMP PULLEY",
+        "DESCRIPTION": "SPC1000 PUMP PULLEY (011-015,017-021)",
+        "QUANTITY": 100,
+        "PRICE": 0.0,
+        "MTBF (h)": 0.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AE0051084",
+        "OEM PART NUMBER": "120MM PUMP TAPERLOCKBUSH",
+        "DESCRIPTION": "PUMP SHAFT TAPERLOCKBUSH",
+        "QUANTITY": 100,
+        "PRICE": 0.0,
+        "MTBF (h)": 0.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AE0039905",
+        "OEM PART NUMBER": "100MM MOTOR TAPERLOCKBUSH",
+        "DESCRIPTION": "MOTOR SHAFT TAPERLOCKBUSH",
+        "QUANTITY": 100,
+        "PRICE": 0.0,
+        "MTBF (h)": 0.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM2035124",
+        "OEM PART NUMBER": "SPC4000 V BELTS",
+        "DESCRIPTION": "SPC4000 REDPOWER V BELTS",
+        "QUANTITY": 800,
+        "PRICE": 0.0,
+        "MTBF (h)": 0.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM0006412",
+        "OEM PART NUMBER": "SPC400X8 MOTOR PULLEY",
+        "DESCRIPTION": "SPC400 MOTOR PULLEY (016 & 022)",
+        "QUANTITY": 100,
+        "PRICE": 0.0,
+        "MTBF (h)": 0.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM0964246",
+        "OEM PART NUMBER": "SPC800 X 8 GROOVE PUMP PULLEY",
+        "DESCRIPTION": "SPC800 PUMP PULLEY (016 & 022)",
+        "QUANTITY": 100,
+        "PRICE": 0.0,
+        "MTBF (h)": 0.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM0814286",
+        "OEM PART NUMBER": "SPC3550 V BELTS",
+        "DESCRIPTION": "SPC3550 REDPOWER V BELTS",
+        "QUANTITY": 800,
+        "PRICE": 0.0,
+        "MTBF (h)": 0.0
+      }
+    ],
+    "BOM": [
+      "ADJUSTING\n  SCREW",
+      "CLAMP WASHER",
+      "CLAMP BOLT",
+      "SHAFT O-RING",
+      "FRAME PLATE STUD",
+      "SHAFT SLEEVE",
+      "IMPELLER 4VC-R",
+      "SHAFT SPACER",
+      "LANTERN RESTRICTOR-SPLIT",
+      "SHAFT SLEEVE, HARDENED.",
+      "RELEASE COLLAR",
+      "FFAM - BEARING ASSEMBLY",
+      "GLAND BOLT",
+      "COVER PLATE LINER",
+      "FRAME PLATE LINER",
+      "INTAKE JOINT",
+      "THROATBUSH",
+      "VOLUTE COVER SEAL",
+      "SHAFT O-RING",
+      "SHAFT SPACER",
+      "SEAL",
+      "GLAND ASSEMBLY",
+      "STUFFING BOX",
+      "COVER PLATE",
+      "COVER PLATE BOLT",
+      "FRAME PLATE",
+      "PACKING SET OF 5",
+      "LANTERN RESTRICTOR",
+      "PACKING RETAINER",
+      "SPC425 MOTOR PULLEY (011-015,017-021)",
+      "SPC1000 PUMP PULLEY (011-015,017-021)",
+      "PUMP SHAFT TAPERLOCKBUSH",
+      "MOTOR SHAFT TAPERLOCKBUSH",
+      "SPC4000 REDPOWER V BELTS",
+      "SPC400 MOTOR PULLEY (016 & 022)",
+      "SPC800 PUMP PULLEY (016 & 022)",
+      "SPC3550 REDPOWER V BELTS"
+    ],
+    "CMMS Codes": [
+      "AM0054779",
+      "AM0054771",
+      "AM0054733",
+      "AM0054790",
+      "AM0054847",
+      "AM0054849",
+      "AM2003927",
+      "AM0054834",
+      "AM2174897",
+      "AM2174896",
+      "AM0054850",
+      "AM0722678",
+      "AM0054851",
+      "AM0756822",
+      "AM0756823",
+      "AM0533183",
+      "AM2003922",
+      "AM0055176",
+      "AM0054860",
+      "AM0054868",
+      "AM0054862",
+      "AM0055122",
+      "AM0055123",
+      "AM1786061",
+      "AM0591427",
+      "AM1798579",
+      "AM1806820",
+      "AM0055125",
+      "AM0525674",
+      "AM2092829",
+      "AM0006420",
+      "AE0051084",
+      "AE0039905",
+      "AM2035124",
+      "AM0006412",
+      "AM0964246",
+      "AM0814286"
+    ],
+    "Criticality": "Medium"
+  },
+  "441-PP-014": {
+    "Functional Location": "FRINAL TAILS DISPOSAL PUMPS TRAIN A PUMP #4",
+    "Asset Type": "Pump",
+    "Model": "WARMAN 12/10-FF-AHP",
+    "Criticality": "Medium",
+    "MTBF (Hours)": 4400.0,
+    "Last Overhaul": "",
+    "Technical Details": [
+      {
+        "Parameter": "",
+        "Value": "",
+        "Unit": "",
+        "Notes": ""
+      }
+    ],
+    "BOM Table": []
+  },
+  "441-PP-015": {
+    "Functional Location": "FINAL TAILS DISPOSAL PUMPS TRAIN A  PUMP 5",
+    "Asset Type": "Pump",
+    "Model": "WARMAN 12/10-FF-AHP",
+    "Criticality": "Medium",
+    "MTBF (Hours)": 4400.0,
+    "Technical Details": [],
+    "BOM Table": [],
+    "BOM": [],
+    "CMMS Codes": []
+  },
+  "441-PP-016": {
+    "Functional Location": "FINAL TAILS DISPOSAL PUMPS TRAIN A  PUMP 6",
+    "Asset Type": "Pump",
+    "Model": "WARMAN 12/10-FF-AHP",
+    "Criticality": "High",
+    "MTBF (Hours)": 4400.0,
+    "Technical Details": [
+      {
+        "Parameter": "FLOWRATE",
+        "Value": 4400.0,
+        "Unit": "m3/hr",
+        "Notes": null
+      },
+      {
+        "Parameter": "DENSITY",
+        "Value": 1.6,
+        "Unit": "kg/l",
+        "Notes": null
+      },
+      {
+        "Parameter": "TOTAL DYNAMIC HEAD",
+        "Value": 29.4,
+        "Unit": "m",
+        "Notes": null
+      },
+      {
+        "Parameter": "POWER INSTALLED",
+        "Value": 330.0,
+        "Unit": "kW",
+        "Notes": null
+      },
+      {
+        "Parameter": "PUMP MAXIMUM SPEED",
+        "Value": 663.0,
+        "Unit": "RPM",
+        "Notes": null
+      }
+    ],
+    "BOM Table": [
+      {
+        "CMMS MATERIAL CODE": "AM0054779",
+        "OEM PART NUMBER": "F001M-E62",
+        "DESCRIPTION": "ADJUSTING\n  SCREW ",
+        "QUANTITY": 1,
+        "PRICE": 0.0,
+        "CRITICALITY": "Medium",
+        "MTBF (H)": 0.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM0054771",
+        "OEM PART NUMBER": "F011-E62",
+        "DESCRIPTION": "CLAMP WASHER",
+        "QUANTITY": 4,
+        "PRICE": 0.0,
+        "CRITICALITY": "Medium",
+        "MTBF (H)": 0.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM0054733",
+        "OEM PART NUMBER": "F012M-E62",
+        "DESCRIPTION": "CLAMP BOLT",
+        "QUANTITY": 4,
+        "PRICE": 0.0,
+        "CRITICALITY": "Medium",
+        "MTBF (H)": 0.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM0054790",
+        "OEM PART NUMBER": "F109-S10",
+        "DESCRIPTION": "SHAFT O-RING",
+        "QUANTITY": 2,
+        "PRICE": 0.0,
+        "CRITICALITY": "Medium",
+        "MTBF (H)": 0.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM0054847",
+        "OEM PART NUMBER": "     ",
+        "DESCRIPTION": "FRAME PLATE STUD",
+        "QUANTITY": 3,
+        "PRICE": 0.0,
+        "CRITICALITY": "Medium",
+        "MTBF (H)": 0.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM0054849",
+        "OEM PART NUMBER": "FAM075-D20",
+        "DESCRIPTION": "SHAFT SLEEVE",
+        "QUANTITY": 1,
+        "PRICE": 0.0,
+        "CRITICALITY": "Medium",
+        "MTBF (H)": 0.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM2003927",
+        "OEM PART NUMBER": "FAM10147WRT1R55",
+        "DESCRIPTION": "IMPELLER 4VC-R",
+        "QUANTITY": 1,
+        "PRICE": 0.0,
+        "CRITICALITY": "Medium",
+        "MTBF (H)": 0.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM0054834",
+        "OEM PART NUMBER": "FAM117-E62",
+        "DESCRIPTION": "SHAFT SPACER",
+        "QUANTITY": 1,
+        "PRICE": 0.0,
+        "CRITICALITY": "Medium",
+        "MTBF (H)": 0.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM2174897",
+        "OEM PART NUMBER": "\n\n    GP118-1S-K31",
+        "DESCRIPTION": "LANTERN RESTRICTOR-SPLIT",
+        "QUANTITY": 1,
+        "PRICE": 0.0,
+        "CRITICALITY": "Medium",
+        "MTBF (H)": 0.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM2174896",
+        "OEM PART NUMBER": "FAM075-J21",
+        "DESCRIPTION": "SHAFT SLEEVE, HARDENED.",
+        "QUANTITY": 1,
+        "PRICE": 0.0,
+        "CRITICALITY": "Medium",
+        "MTBF (H)": 0.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM0054850",
+        "OEM PART NUMBER": "FAM239-E62",
+        "DESCRIPTION": "RELEASE COLLAR",
+        "QUANTITY": 1,
+        "PRICE": 0.0,
+        "CRITICALITY": "Medium",
+        "MTBF (H)": 0.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM0722678",
+        "OEM PART NUMBER": "FFAM005M",
+        "DESCRIPTION": "FFAM - BEARING ASSEMBLY ",
+        "QUANTITY": 1,
+        "PRICE": 0.0,
+        "CRITICALITY": "Medium",
+        "MTBF (H)": 0.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM0054851",
+        "OEM PART NUMBER": "G045M-E62",
+        "DESCRIPTION": "GLAND BOLT",
+        "QUANTITY": 4,
+        "PRICE": 0.0,
+        "CRITICALITY": "Medium",
+        "MTBF (H)": 0.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM0756822",
+        "OEM PART NUMBER": "G10018MTL1MR55",
+        "DESCRIPTION": "COVER PLATE LINER",
+        "QUANTITY": 1,
+        "PRICE": 0.0,
+        "CRITICALITY": "Medium",
+        "MTBF (H)": 0.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM0756823",
+        "OEM PART NUMBER": "G10036MTL1MR55",
+        "DESCRIPTION": "FRAME PLATE LINER",
+        "QUANTITY": 1,
+        "PRICE": 0.0,
+        "CRITICALITY": "Medium",
+        "MTBF (H)": 0.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM0533183",
+        "OEM PART NUMBER": "G10060-U13A",
+        "DESCRIPTION": "INTAKE JOINT",
+        "QUANTITY": 1,
+        "PRICE": 0.0,
+        "CRITICALITY": "Medium",
+        "MTBF (H)": 0.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM2003922",
+        "OEM PART NUMBER": "G10083WRT1R55",
+        "DESCRIPTION": "THROATBUSH",
+        "QUANTITY": 1,
+        "PRICE": 0.0,
+        "CRITICALITY": "Medium",
+        "MTBF (H)": 0.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM0055176",
+        "OEM PART NUMBER": "G10124-U14A",
+        "DESCRIPTION": "VOLUTE COVER SEAL",
+        "QUANTITY": 1,
+        "PRICE": 0.0,
+        "CRITICALITY": "Medium",
+        "MTBF (H)": 0.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM0054860",
+        "OEM PART NUMBER": "G109-S10",
+        "DESCRIPTION": "SHAFT O-RING",
+        "QUANTITY": 2,
+        "PRICE": 0.0,
+        "CRITICALITY": "Medium",
+        "MTBF (H)": 0.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM0054868",
+        "OEM PART NUMBER": "G117-E62",
+        "DESCRIPTION": "SHAFT SPACER",
+        "QUANTITY": 1,
+        "PRICE": 0.0,
+        "CRITICALITY": "Medium",
+        "MTBF (H)": 0.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM0054862",
+        "OEM PART NUMBER": "G122-R11A",
+        "DESCRIPTION": "SEAL",
+        "QUANTITY": 1,
+        "PRICE": 0.0,
+        "CRITICALITY": "Medium",
+        "MTBF (H)": 0.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM0055122",
+        "OEM PART NUMBER": "GP044-K24",
+        "DESCRIPTION": "GLAND ASSEMBLY",
+        "QUANTITY": 1,
+        "PRICE": 0.0,
+        "CRITICALITY": "Medium",
+        "MTBF (H)": 0.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM0055123",
+        "OEM PART NUMBER": "GP078-D23",
+        "DESCRIPTION": "STUFFING BOX",
+        "QUANTITY": 1,
+        "PRICE": 0.0,
+        "CRITICALITY": "Medium",
+        "MTBF (H)": 0.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM1786061",
+        "OEM PART NUMBER": "GP10013X-D20",
+        "DESCRIPTION": "COVER PLATE",
+        "QUANTITY": 1,
+        "PRICE": 0.0,
+        "CRITICALITY": "Medium",
+        "MTBF (H)": 0.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM0591427",
+        "OEM PART NUMBER": "GP10015MX-E10",
+        "DESCRIPTION": "COVER PLATE BOLT",
+        "QUANTITY": 14,
+        "PRICE": 0.0,
+        "CRITICALITY": "Medium",
+        "MTBF (H)": 0.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM1798579",
+        "OEM PART NUMBER": "GP10032X-D20",
+        "DESCRIPTION": "FRAME PLATE",
+        "QUANTITY": 1,
+        "PRICE": 0.0,
+        "CRITICALITY": "Medium",
+        "MTBF (H)": 0.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM1806820",
+        "OEM PART NUMBER": "7189GP111/5-1210GP",
+        "DESCRIPTION": "PACKING SET OF 5",
+        "QUANTITY": 1,
+        "PRICE": 0.0,
+        "CRITICALITY": "Medium",
+        "MTBF (H)": 0.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM0055125",
+        "OEM PART NUMBER": "GP118-1-K31",
+        "DESCRIPTION": "LANTERN RESTRICTOR",
+        "QUANTITY": 1,
+        "PRICE": 0.0,
+        "CRITICALITY": "Medium",
+        "MTBF (H)": 0.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM0525674",
+        "OEM PART NUMBER": "GP259-K24",
+        "DESCRIPTION": "PACKING RETAINER",
+        "QUANTITY": 1,
+        "PRICE": 0.0,
+        "CRITICALITY": "Medium",
+        "MTBF (H)": 0.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM2092829",
+        "OEM PART NUMBER": "SPC425X8 MOTOR PULLEY",
+        "DESCRIPTION": "SPC425 MOTOR PULLEY (011-015,017-021)",
+        "QUANTITY": 1,
+        "PRICE": 0.0,
+        "CRITICALITY": "Medium",
+        "MTBF (H)": 0.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM0006420",
+        "OEM PART NUMBER": "SPC1000X8 PUMP PULLEY",
+        "DESCRIPTION": "SPC1000 PUMP PULLEY (011-015,017-021)",
+        "QUANTITY": 1,
+        "PRICE": 0.0,
+        "CRITICALITY": "Medium",
+        "MTBF (H)": 0.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AE0051084",
+        "OEM PART NUMBER": "120MM PUMP TAPERLOCKBUSH",
+        "DESCRIPTION": "PUMP SHAFT TAPERLOCKBUSH",
+        "QUANTITY": 1,
+        "PRICE": 0.0,
+        "CRITICALITY": "Medium",
+        "MTBF (H)": 0.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AE0039905",
+        "OEM PART NUMBER": "100MM MOTOR TAPERLOCKBUSH",
+        "DESCRIPTION": "MOTOR SHAFT TAPERLOCKBUSH",
+        "QUANTITY": 1,
+        "PRICE": 0.0,
+        "CRITICALITY": "Medium",
+        "MTBF (H)": 0.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM2035124",
+        "OEM PART NUMBER": "SPC4000 V BELTS",
+        "DESCRIPTION": "SPC4000 REDPOWER V BELTS",
+        "QUANTITY": 8,
+        "PRICE": 0.0,
+        "CRITICALITY": "Medium",
+        "MTBF (H)": 0.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM0006412",
+        "OEM PART NUMBER": "SPC400X8 MOTOR PULLEY",
+        "DESCRIPTION": "SPC400 MOTOR PULLEY (016 & 022)",
+        "QUANTITY": 1,
+        "PRICE": 0.0,
+        "CRITICALITY": "Medium",
+        "MTBF (H)": 0.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM0964246",
+        "OEM PART NUMBER": "SPC800 X 8 GROOVE PUMP PULLEY",
+        "DESCRIPTION": "SPC800 PUMP PULLEY (016 & 022)",
+        "QUANTITY": 1,
+        "PRICE": 0.0,
+        "CRITICALITY": "Medium",
+        "MTBF (H)": 0.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM0814286",
+        "OEM PART NUMBER": "SPC3550 V BELTS",
+        "DESCRIPTION": "SPC3550 REDPOWER V BELTS",
+        "QUANTITY": 8,
+        "PRICE": 0.0,
+        "CRITICALITY": "Medium",
+        "MTBF (H)": 0.0
+      }
+    ],
+    "BOM": [
+      "F001M-E62 • ADJUSTING\n  SCREW  • AM0054779",
+      "F011-E62 • CLAMP WASHER • AM0054771",
+      "F012M-E62 • CLAMP BOLT • AM0054733",
+      "F109-S10 • SHAFT O-RING • AM0054790",
+      "FRAME PLATE STUD • AM0054847",
+      "FAM075-D20 • SHAFT SLEEVE • AM0054849",
+      "FAM10147WRT1R55 • IMPELLER 4VC-R • AM2003927",
+      "FAM117-E62 • SHAFT SPACER • AM0054834",
+      "\n\n    GP118-1S-K31 • LANTERN RESTRICTOR-SPLIT • AM2174897",
+      "FAM075-J21 • SHAFT SLEEVE, HARDENED. • AM2174896",
+      "FAM239-E62 • RELEASE COLLAR • AM0054850",
+      "FFAM005M • FFAM - BEARING ASSEMBLY  • AM0722678",
+      "G045M-E62 • GLAND BOLT • AM0054851",
+      "G10018MTL1MR55 • COVER PLATE LINER • AM0756822",
+      "G10036MTL1MR55 • FRAME PLATE LINER • AM0756823",
+      "G10060-U13A • INTAKE JOINT • AM0533183",
+      "G10083WRT1R55 • THROATBUSH • AM2003922",
+      "G10124-U14A • VOLUTE COVER SEAL • AM0055176",
+      "G109-S10 • SHAFT O-RING • AM0054860",
+      "G117-E62 • SHAFT SPACER • AM0054868",
+      "G122-R11A • SEAL • AM0054862",
+      "GP044-K24 • GLAND ASSEMBLY • AM0055122",
+      "GP078-D23 • STUFFING BOX • AM0055123",
+      "GP10013X-D20 • COVER PLATE • AM1786061",
+      "GP10015MX-E10 • COVER PLATE BOLT • AM0591427",
+      "GP10032X-D20 • FRAME PLATE • AM1798579",
+      "7189GP111/5-1210GP • PACKING SET OF 5 • AM1806820",
+      "GP118-1-K31 • LANTERN RESTRICTOR • AM0055125",
+      "GP259-K24 • PACKING RETAINER • AM0525674",
+      "SPC425X8 MOTOR PULLEY • SPC425 MOTOR PULLEY (011-015,017-021) • AM2092829",
+      "SPC1000X8 PUMP PULLEY • SPC1000 PUMP PULLEY (011-015,017-021) • AM0006420",
+      "120MM PUMP TAPERLOCKBUSH • PUMP SHAFT TAPERLOCKBUSH • AE0051084",
+      "100MM MOTOR TAPERLOCKBUSH • MOTOR SHAFT TAPERLOCKBUSH • AE0039905",
+      "SPC4000 V BELTS • SPC4000 REDPOWER V BELTS • AM2035124",
+      "SPC400X8 MOTOR PULLEY • SPC400 MOTOR PULLEY (016 & 022) • AM0006412",
+      "SPC800 X 8 GROOVE PUMP PULLEY • SPC800 PUMP PULLEY (016 & 022) • AM0964246",
+      "SPC3550 V BELTS • SPC3550 REDPOWER V BELTS • AM0814286"
+    ],
+    "CMMS Codes": [
+      "AM0054779",
+      "AM0054771",
+      "AM0054733",
+      "AM0054790",
+      "AM0054847",
+      "AM0054849",
+      "AM2003927",
+      "AM0054834",
+      "AM2174897",
+      "AM2174896",
+      "AM0054850",
+      "AM0722678",
+      "AM0054851",
+      "AM0756822",
+      "AM0756823",
+      "AM0533183",
+      "AM2003922",
+      "AM0055176",
+      "AM0054860",
+      "AM0054868",
+      "AM0054862",
+      "AM0055122",
+      "AM0055123",
+      "AM1786061",
+      "AM0591427",
+      "AM1798579",
+      "AM1806820",
+      "AM0055125",
+      "AM0525674",
+      "AM2092829",
+      "AM0006420",
+      "AE0051084",
+      "AE0039905",
+      "AM2035124",
+      "AM0006412",
+      "AM0964246",
+      "AM0814286"
+    ]
+  },
+  "418-PP-090": {
+    "Functional Location": "MIG PRODUCT TRANSFER PUMP #1",
+    "Asset Type": "Pump",
+    "Model": "WARMAN 16/14-G-AH",
+    "Criticality": "Medium",
+    "MTBF (Hours)": 10300.0,
+    "Technical Details": [
+      {
+        "Parameter": "FLOWRATE",
+        "Value": 2500,
+        "Unit": "m3/hr",
+        "Notes": null
+      },
+      {
+        "Parameter": "DENSITY",
+        "Value": 1.6,
+        "Unit": "kg/l",
+        "Notes": null
+      },
+      {
+        "Parameter": "TOTAL DYNAMIC HEAD",
+        "Value": 24,
+        "Unit": "m",
+        "Notes": null
+      },
+      {
+        "Parameter": "POWER INSTALLED",
+        "Value": 500,
+        "Unit": "kW",
+        "Notes": null
+      },
+      {
+        "Parameter": "PUMP MAXIMUM SPEED",
+        "Value": 446,
+        "Unit": "RPM",
+        "Notes": null
+      }
+    ],
+    "BOM Table": [
+      {
+        "CMMS MATERIAL CODE": "AM1793009",
+        "OEM PART NUMBER": "GAM14147-A05A",
+        "DESCRIPTION": "IMPELLER - 5\n  VCG",
+        "QUANTITY": 1,
+        "PRICE": 0.0,
+        "CRITICALITY": "High",
+        "MTBF (H)": 10300.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM1886774",
+        "OEM PART NUMBER": "GAM076-2-C23",
+        "DESCRIPTION": "SHAFT SLEEVE",
+        "QUANTITY": 1,
+        "PRICE": 0.0,
+        "CRITICALITY": "High",
+        "MTBF (H)": 10300.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM0533184",
+        "OEM PART NUMBER": "G118-1-K31",
+        "DESCRIPTION": "LANTERN RESTRICTOR",
+        "QUANTITY": 1,
+        "PRICE": 0.0,
+        "CRITICALITY": "Medium",
+        "MTBF (H)": 10300.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM0054852",
+        "OEM PART NUMBER": "G044-K24",
+        "DESCRIPTION": "GLAND ASSEMBLY",
+        "QUANTITY": 1,
+        "PRICE": 0.0,
+        "CRITICALITY": "Medium",
+        "MTBF (H)": 10300.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM0054851",
+        "OEM PART NUMBER": "G045M-E62",
+        "DESCRIPTION": "GLAND BOLT",
+        "QUANTITY": 4,
+        "PRICE": 0.0,
+        "CRITICALITY": "Low",
+        "MTBF (H)": 2575.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM0055189",
+        "OEM PART NUMBER": "G111-Q05A",
+        "DESCRIPTION": "PACKING SET OF 4",
+        "QUANTITY": 1,
+        "PRICE": 0.0,
+        "CRITICALITY": "Medium",
+        "MTBF (H)": 744.0
+      },
+      {
+        "CMMS MATERIAL CODE": " ",
+        "OEM PART NUMBER": "H14060-U13A",
+        "DESCRIPTION": "INTAKE JOINT",
+        "QUANTITY": 1,
+        "PRICE": 0.0,
+        "CRITICALITY": "Medium",
+        "MTBF (H)": 20600.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM1886772",
+        "OEM PART NUMBER": "H14018-R55",
+        "DESCRIPTION": "CVR PLT LINER\n  (WARMAN)",
+        "QUANTITY": 1,
+        "PRICE": 0.0,
+        "CRITICALITY": "High",
+        "MTBF (H)": 10300.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM1886772",
+        "OEM PART NUMBER": "H14083M-R55",
+        "DESCRIPTION": "THROATBUSH",
+        "QUANTITY": 1,
+        "PRICE": 0.0,
+        "CRITICALITY": "High",
+        "MTBF (H)": 10300.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM1886773",
+        "OEM PART NUMBER": "H14043-R55",
+        "DESCRIPTION": "FRAME PLATE LINER\n  R55 (WARMAN)",
+        "QUANTITY": 1,
+        "PRICE": 0.0,
+        "CRITICALITY": "High",
+        "MTBF (H)": 10300.0
+      },
+      {
+        "CMMS MATERIAL CODE": " ",
+        "OEM PART NUMBER": "H14041-R55",
+        "DESCRIPTION": "FRAME PLATE LINER\n  INSERT",
+        "QUANTITY": 1,
+        "PRICE": 0.0,
+        "CRITICALITY": "High",
+        "MTBF (H)": 10300.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM0054860",
+        "OEM PART NUMBER": "G109-S10",
+        "DESCRIPTION": "O-RING",
+        "QUANTITY": 3,
+        "PRICE": 0.0,
+        "CRITICALITY": "Medium",
+        "MTBF (H)": 10300.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM0857582",
+        "OEM PART NUMBER": "G239-10M-E62",
+        "DESCRIPTION": "RELEASE COLLAR",
+        "QUANTITY": 1,
+        "PRICE": 0.0,
+        "CRITICALITY": "High",
+        "MTBF (H)": 10300.0
+      },
+      {
+        "CMMS MATERIAL CODE": "AM1792978",
+        "OEM PART NUMBER": "GAM005M",
+        "DESCRIPTION": "BEARING ASSEMBLY",
+        "QUANTITY": 1,
+        "PRICE": 0.0,
+        "CRITICALITY": "High",
+        "MTBF (H)": 30900.0
+      }
+    ],
+    "BOM": [],
+    "CMMS Codes": []
+  }
+}

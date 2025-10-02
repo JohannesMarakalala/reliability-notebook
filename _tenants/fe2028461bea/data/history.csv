@@ -1,0 +1,4 @@
+Number,Asset Tag,Functional Location,WO Number,Date of Maintenance,Maintenance Code,Spares Used,QTY,Hours Run Since Last Repair,Labour Hours,Asset Downtime Hours,Notes and Findings,Attachments
+1,T-441,Tailings Discharge,WO-1001,2025-01-05,Inspection,—,0,300,2,0,Pump inspected,
+2,T-441,Tailings Discharge,WO-1002,2025-01-08,Lube,Grease,1,350,1,0,Grease applied,
+3,T-441,Tailings Discharge,WO-1003,2025-01-12,Finding,Seal,1,400,3,1,Seal leak observed,

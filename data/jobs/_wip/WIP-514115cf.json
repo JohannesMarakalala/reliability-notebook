@@ -1,0 +1,81 @@
+{
+  "id": "WIP-514115cf",
+  "persist_id": "JOB-20250918-140",
+  "created_at": "2025-09-18T23:10:55.839854",
+  "status": "Draft",
+  "archived": false,
+  "trashed": false,
+  "asset_tag": "408-PP-001",
+  "pm_code": "PM00",
+  "task_description": "Repack Pump\n",
+  "creator": "Johannes Marakalala",
+  "required_end_date": "2025-09-18",
+  "priority": "High",
+  "requested_by": "johannes_marakalala@yahoo.com",
+  "wo_number": "",
+  "lead_role": "Department Foreman — Mechanical",
+  "co_leads": [],
+  "lead_department": "Mechanical",
+  "spares": [
+    {
+      "cmms": "AM1806819",
+      "oem": "7189T1116-2018TUAH",
+      "desc": "PACKING SET OF 4",
+      "qty": 1,
+      "price": 920.0,
+      "line_total": 920.0
+    }
+  ],
+  "delivery_note": "",
+  "labour": [
+    {
+      "craft": "Mechanical Technician",
+      "qty": 1,
+      "hours": 4.0,
+      "dept": "Mechanical",
+      "notes": "",
+      "names": ""
+    }
+  ],
+  "lifting": {
+    "cranage_required": false,
+    "crane_type": "",
+    "mobile_capacity": "",
+    "overhead_spec": "",
+    "forklift_required": false,
+    "forklift_capacity": "",
+    "scaffolding_required": false
+  },
+  "logistics": {
+    "pickup_point": "",
+    "delivery_location": "",
+    "transport_needed": false,
+    "transport_type": "",
+    "permits": [],
+    "responsible_person": ""
+  },
+  "planned_duration_hours": 4.0,
+  "planned_start": "2025-09-18",
+  "planned_end": "2025-09-18",
+  "capacity_fit": [
+    {
+      "date": "2025-09-18",
+      "craft": "Mechanical Technician",
+      "hours": 4.0
+    }
+  ],
+  "kitting_readiness": {
+    "pct_ok": 100.0,
+    "warnings": []
+  },
+  "attachments": [],
+  "currency_symbol": "R",
+  "export": {
+    "csv_path": "",
+    "ics_path": "",
+    "pdf_path": "",
+    "html_path": ""
+  },
+  "activated": false,
+  "last_updated": "2025-09-18T23:12:33.991917"
+}

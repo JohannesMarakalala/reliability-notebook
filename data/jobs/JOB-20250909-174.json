@@ -1,0 +1,86 @@
+{
+  "id": "JOB-20250909-174",
+  "created_at": "2025-09-09T14:07:39.531381",
+  "status": "Draft",
+  "archived": false,
+  "trashed": false,
+  "asset_tag": "",
+  "pm_code": "",
+  "task_description": "",
+  "creator": "",
+  "required_end_date": "2025-09-09",
+  "priority": "",
+  "requested_by": "",
+  "wo_number": "",
+  "lead_role": "",
+  "co_leads": [],
+  "lead_department": "Mechanical",
+  "spares": [],
+  "delivery_note": "",
+  "labour": [
+    {
+      "craft": "Mechanical Technician",
+      "qty": 1,
+      "hours": 4.0,
+      "dept": "Mechanical",
+      "notes": ""
+    }
+  ],
+  "lifting": {
+    "mobile_crane": {
+      "required": false,
+      "spec": "",
+      "window": ""
+    },
+    "overhead_crane": {
+      "required": false,
+      "spec": ""
+    },
+    "forklift": {
+      "required": false,
+      "capacity": ""
+    },
+    "truck": {
+      "required": false,
+      "type": ""
+    },
+    "manlift": {
+      "required": false,
+      "spec": ""
+    },
+    "scaffolding": {
+      "required": false,
+      "spec": ""
+    }
+  },
+  "logistics": {
+    "pickup_point": "",
+    "delivery_location": "",
+    "transport_needed": false,
+    "transport_type": "",
+    "route_constraints": "",
+    "permits": [],
+    "responsible_person": ""
+  },
+  "planned_duration_hours": 0.0,
+  "planned_start": "2025-09-09",
+  "capacity_fit": [
+    {
+      "date": "2025-09-09",
+      "craft": "Mechanical Technician",
+      "hours": 4.0
+    }
+  ],
+  "kitting_readiness": {
+    "pct_ok": 0.0,
+    "warnings": []
+  },
+  "attachments": [],
+  "export": {
+    "csv_path": "",
+    "ics_path": "",
+    "pdf_path": "",
+    "html_path": "JOB-20250909-174.html"
+  },
+  "last_emailed_at": ""
+}

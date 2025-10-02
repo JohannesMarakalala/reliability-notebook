@@ -1,0 +1,18 @@
+[
+  {
+    "email": "johannes_marakalala@yahoo.com",
+    "name": "Johannes Marakalala",
+    "salt": "Mm27uGcWoe8_lvMJF2B6ww==",
+    "pw_hash": "80e9470cc94f9b7c5a5d4b3d57852586e4db1d6d45735271128b0f94e3da3fb9",
+    "role": "admin",
+    "created_at": "2025-09-29T22:49:39"
+  },
+  {
+    "name": "Thabang Marakalala",
+    "email": "poundbruvva007@gmail.com",
+    "salt": "59952646d3cc940e91642fab14c4236b",
+    "hash": "cc9ec2a6148d18a2ca4c8ab996dafd562b4fda379e3a64c753499fbbc69153ee",
+    "algo": "pbkdf2_sha256_v1",
+    "created": "2025-09-30T09:19:39"
+  }
+]

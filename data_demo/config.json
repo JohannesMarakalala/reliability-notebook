@@ -1,0 +1,51 @@
+{
+  "address_book": [
+    {
+      "name": "Planner",
+      "email": "planner@maraksreliability.com"
+    }
+  ],
+  "craft_presets": [
+    "Mechanical Technician",
+    "Electrician",
+    "Instrument Technician",
+    "Rigger",
+    "Boilermaker",
+    "Planner / Scheduler",
+    "Reliability Engineer",
+    "Other"
+  ],
+  "dept_presets": [
+    "Mechanical",
+    "Electrical",
+    "Instrumentation",
+    "Rigging",
+    "Boiler / Fabrication",
+    "Process / Operations",
+    "Reliability",
+    "Planning / Scheduling",
+    "Engineering / Projects",
+    "Other"
+  ],
+  "permit_presets": [
+    "Lifting Operation",
+    "Hot Work",
+    "Confined Space Entry",
+    "Electrical Isolation / LOTO",
+    "Working at Heights",
+    "Line Breaking",
+    "Pressure Testing"
+  ],
+  "capacity_by_craft": {
+    "Mechanical Technician": 64,
+    "Electrician": 32,
+    "Instrument Technician": 24,
+    "Rigger": 24,
+    "Boilermaker": 24,
+    "Planner / Scheduler": 8,
+    "Reliability Engineer": 6,
+    "Other": 8
+  },
+  "sendgrid_from": "planner@maraksreliability.com",
+  "default_asset_filter": []
+}

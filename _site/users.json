@@ -1,0 +1,20 @@
+{
+  "users": [
+    {
+      "email": "demo@vigil.local",
+      "name": "Demo",
+      "salt": "oMBwBYxLtmxdGWC_",
+      "password_hash": "88e56e85bf42091cff4b663ed7eff17e86d155b2ef33fab44817db3f1443e578",
+      "created_at": "2025-09-29 20:54:53",
+      "role": "admin"
+    },
+    {
+      "email": "johannes_marakalala@yahoo.com",
+      "name": "Johannes Marakalala",
+      "salt": "UL7gSSJ3vcnod29b",
+      "password_hash": "949b9ecae3712ecb06212aba5b58ecdc317318e5de71f3a81c65c46a2bfe1925",
+      "created_at": "2025-09-29 21:26:19",
+      "role": "user"
+    }
+  ]
+}

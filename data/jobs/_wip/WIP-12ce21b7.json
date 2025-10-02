@@ -1,0 +1,282 @@
+{
+  "id": "WIP-12ce21b7",
+  "persist_id": "JOB-20250911-137",
+  "created_at": "2025-09-11T19:17:26.918844",
+  "status": "Submitted",
+  "archived": false,
+  "trashed": false,
+  "asset_tag": "408-PP-001",
+  "pm_code": "PM01",
+  "task_description": "408-PP-001: OVERHAUL PUMP COMPLETELY",
+  "creator": "Johannes Marakalala",
+  "required_end_date": "2025-09-30",
+  "priority": "High",
+  "requested_by": "",
+  "wo_number": "WO-000004",
+  "lead_role": "Department Foreman — Mechanical",
+  "co_leads": [],
+  "lead_department": "Mechanical",
+  "spares": [
+    {
+      "cmms": "AM0525666",
+      "oem": "T118-1-K31",
+      "desc": "LANTERN RESTRICTOR",
+      "qty": 1,
+      "price": 2234.0,
+      "line_total": 2234.0
+    },
+    {
+      "cmms": "AM1806819",
+      "oem": "7189T1116-2018TUAH",
+      "desc": "PACKING SET OF 4",
+      "qty": 2,
+      "price": 920.0,
+      "line_total": 1840.0
+    },
+    {
+      "cmms": "AM0533176",
+      "oem": "H045M-E62",
+      "desc": "GLAND BOLT",
+      "qty": 4,
+      "price": 64.0,
+      "line_total": 256.0
+    },
+    {
+      "cmms": "AM0533180",
+      "oem": "TU18145XDP1-W106",
+      "desc": "IMPELLER 4VC-M",
+      "qty": 1,
+      "price": 238000.0,
+      "line_total": 238000.0
+    },
+    {
+      "cmms": "AM0533179",
+      "oem": "TU18078-D20",
+      "desc": "STUFFING BOX",
+      "qty": 1,
+      "price": 79480.0,
+      "line_total": 79480.0
+    },
+    {
+      "cmms": "AM0525672",
+      "oem": "T044-K24",
+      "desc": "GLAND ASSEMBLY",
+      "qty": 1,
+      "price": 2450.0,
+      "line_total": 2450.0
+    },
+    {
+      "cmms": "AM2081804",
+      "oem": "T076J221",
+      "desc": "SHAFT SLEEVE",
+      "qty": 1,
+      "price": 102537.0,
+      "line_total": 102537.0
+    },
+    {
+      "cmms": "AM0533182",
+      "oem": "U18122-S10",
+      "desc": "SEAL",
+      "qty": 1,
+      "price": 178.0,
+      "line_total": 178.0
+    },
+    {
+      "cmms": "AM0525677",
+      "oem": "U18124-U14A",
+      "desc": "VOLUTE COVER SEAL",
+      "qty": 2,
+      "price": 202.0,
+      "line_total": 404.0
+    },
+    {
+      "cmms": "AM0533175",
+      "oem": "U18110-A05A",
+      "desc": "VOLUTE LINER",
+      "qty": 1,
+      "price": 372499.0,
+      "line_total": 372499.0
+    },
+    {
+      "cmms": "AM0533181",
+      "oem": "U18083XDP1-W106",
+      "desc": "THROATBUSH",
+      "qty": 1,
+      "price": 244530.0,
+      "line_total": 244530.0
+    },
+    {
+      "cmms": "AM0525668",
+      "oem": "U18060-U13A",
+      "desc": "INTAKE JOINT RING",
+      "qty": 1,
+      "price": 875.0,
+      "line_total": 875.0
+    },
+    {
+      "cmms": "AM0533174",
+      "oem": "U18041-A05A",
+      "desc": "FRAME PLATE LINER\n  INSERT",
+      "qty": 1,
+      "price": 248611.0,
+      "line_total": 248611.0
+    },
+    {
+      "cmms": "AM0525669",
+      "oem": "UP18132-U13A",
+      "desc": "DISCHARGE JOINT RING",
+      "qty": 1,
+      "price": 970.0,
+      "line_total": 970.0
+    },
+    {
+      "cmms": "AM0525667",
+      "oem": "T239M-C23",
+      "desc": "RELEASE COLLAR",
+      "qty": 1,
+      "price": 4230.0,
+      "line_total": 4230.0
+    },
+    {
+      "cmms": "AM0533178",
+      "oem": "T109-S10",
+      "desc": "O-RING (69T164N439)",
+      "qty": 3,
+      "price": 33.0,
+      "line_total": 99.0
+    },
+    {
+      "cmms": "AM0533177",
+      "oem": "T005",
+      "desc": "BEARING ASSEMBLY",
+      "qty": 1,
+      "price": 256999.0,
+      "line_total": 256999.0
+    }
+  ],
+  "delivery_note": "Spares to be collected at main stores and at Weir laydown area",
+  "labour": [
+    {
+      "craft": "Mechanical Technician",
+      "qty": 2,
+      "hours": 12.0,
+      "dept": "Mechanical",
+      "names": "Ceasar Phiri, Abram Motlhatlane",
+      "notes": "STRIP AND ASSEMBLE PUMP"
+    },
+    {
+      "craft": "Mechanical Tech Assistant",
+      "qty": 2,
+      "hours": 12.0,
+      "dept": "Mechanical",
+      "names": "Siphamandla Dyonase, Vincent Matlou",
+      "notes": "STRIP AND ASSEMBLE PUMP"
+    },
+    {
+      "craft": "Rigger",
+      "qty": 1,
+      "hours": 12.0,
+      "dept": "Rigging",
+      "names": "Nape Moetjie",
+      "notes": "LIFTING USING OHC"
+    },
+    {
+      "craft": "Boilermaker",
+      "qty": 1,
+      "hours": 12.0,
+      "dept": "Boiler / Fabrication",
+      "names": "Johan Coetze",
+      "notes": "CUT BOLTS"
+    }
+  ],
+  "lifting": {
+    "mobile_crane": {
+      "required": false,
+      "spec": "",
+      "window": ""
+    },
+    "overhead_crane": {
+      "required": true,
+      "spec": "408 OHC"
+    },
+    "forklift": {
+      "required": true,
+      "capacity": "20 ton"
+    },
+    "truck": {
+      "required": true,
+      "type": "HiUp "
+    },
+    "manlift": {
+      "required": false,
+      "spec": ""
+    },
+    "scaffolding": {
+      "required": false,
+      "spec": ""
+    }
+  },
+  "logistics": {
+    "pickup_point": "Main Stores and Weir Laydown Area",
+    "delivery_location": "408 Maintenance Area",
+    "transport_needed": true,
+    "transport_type": "Truck (Hi Up)",
+    "route_constraints": "",
+    "permits": [
+      "Lifting Operation",
+      "Hot Work",
+      "Electrical Isolation / LOTO"
+    ],
+    "responsible_person": "Tumelo Magagane"
+  },
+  "planned_duration_hours": 12.0,
+  "planned_start": "2025-09-11",
+  "capacity_fit": [
+    {
+      "date": "2025-09-11",
+      "craft": "Mechanical Technician",
+      "hours": 12.0
+    },
+    {
+      "date": "2025-09-11",
+      "craft": "Mechanical Tech Assistant",
+      "hours": 12.0
+    },
+    {
+      "date": "2025-09-11",
+      "craft": "Rigger",
+      "hours": 12.0
+    },
+    {
+      "date": "2025-09-11",
+      "craft": "Boilermaker",
+      "hours": 12.0
+    },
+    {
+      "date": "2025-09-12",
+      "craft": "Mechanical Technician",
+      "hours": 12.0
+    },
+    {
+      "date": "2025-09-12",
+      "craft": "Mechanical Tech Assistant",
+      "hours": 12.0
+    }
+  ],
+  "kitting_readiness": {
+    "pct_ok": 100.0,
+    "warnings": []
+  },
+  "attachments": [],
+  "export": {
+    "csv_path": "",
+    "ics_path": "",
+    "pdf_path": "",
+    "html_path": ""
+  },
+  "last_emailed_at": "",
+  "currency": "ZAR",
+  "fx_rate": 18.5,
+  "last_updated": "2025-09-11T21:56:11.806327",
+  "pdf_path": "data\\attachments\\plans\\JOB-20250911-137\\WO-000004.html"
+}

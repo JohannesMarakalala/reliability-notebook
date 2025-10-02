@@ -1,0 +1,156 @@
+{
+  "id": "JOB-20250909-116",
+  "created_at": "2025-09-09T16:33:52.095086",
+  "status": "Draft",
+  "archived": false,
+  "trashed": true,
+  "asset_tag": "408-PP-001",
+  "pm_code": "PM01",
+  "task_description": "408-PP-001: Overhaul Pump",
+  "creator": "Johannes Marakalala",
+  "required_end_date": "2025-11-30",
+  "priority": "High",
+  "requested_by": "",
+  "wo_number": "",
+  "lead_role": "Department Foreman — Mechanical",
+  "co_leads": [],
+  "lead_department": "Mechanical",
+  "spares": [],
+  "delivery_note": "Deliver Pump Spares to 408 Maintenance Bay",
+  "labour": [
+    {
+      "craft": "Mechanical Technician",
+      "qty": 2,
+      "hours": 9.0,
+      "dept": "Mechanical",
+      "notes": ""
+    },
+    {
+      "craft": "Mechanical Tech Assistant",
+      "qty": 2,
+      "hours": 9.0,
+      "dept": "Mechanical",
+      "notes": "None"
+    },
+    {
+      "craft": "Electrician",
+      "qty": 1,
+      "hours": 1.0,
+      "dept": "Electrical",
+      "notes": "None"
+    },
+    {
+      "craft": "Rigger",
+      "qty": 1,
+      "hours": 9.0,
+      "dept": "Rigging",
+      "notes": "None"
+    },
+    {
+      "craft": "Boilermaker",
+      "qty": 1,
+      "hours": 9.0,
+      "dept": "Boiler / Fabrication",
+      "notes": "None"
+    },
+    {
+      "craft": "None",
+      "qty": 0,
+      "hours": 0.0,
+      "dept": "None",
+      "notes": "None"
+    }
+  ],
+  "lifting": {
+    "mobile_crane": {
+      "required": false,
+      "spec": "",
+      "window": ""
+    },
+    "overhead_crane": {
+      "required": true,
+      "spec": "120 ton"
+    },
+    "forklift": {
+      "required": true,
+      "capacity": "20 ton"
+    },
+    "truck": {
+      "required": true,
+      "type": "Hi Up"
+    },
+    "manlift": {
+      "required": false,
+      "spec": ""
+    },
+    "scaffolding": {
+      "required": false,
+      "spec": ""
+    }
+  },
+  "logistics": {
+    "pickup_point": "Main Stores",
+    "delivery_location": "408 Maintenance Area",
+    "transport_needed": true,
+    "transport_type": "",
+    "route_constraints": "",
+    "permits": [
+      "Lifting Operation",
+      "Hot Work",
+      "Electrical Isolation / LOTO"
+    ],
+    "responsible_person": "Johannes Marakalala"
+  },
+  "planned_duration_hours": 12.0,
+  "planned_start": "2025-10-14",
+  "capacity_fit": [
+    {
+      "date": "2025-10-14",
+      "craft": "Mechanical Technician",
+      "hours": 12.0
+    },
+    {
+      "date": "2025-10-14",
+      "craft": "Mechanical Tech Assistant",
+      "hours": 12.0
+    },
+    {
+      "date": "2025-10-14",
+      "craft": "Electrician",
+      "hours": 1.0
+    },
+    {
+      "date": "2025-10-14",
+      "craft": "Rigger",
+      "hours": 9.0
+    },
+    {
+      "date": "2025-10-14",
+      "craft": "Boilermaker",
+      "hours": 9.0
+    },
+    {
+      "date": "2025-10-15",
+      "craft": "Mechanical Technician",
+      "hours": 6.0
+    },
+    {
+      "date": "2025-10-15",
+      "craft": "Mechanical Tech Assistant",
+      "hours": 6.0
+    }
+  ],
+  "kitting_readiness": {
+    "pct_ok": 0.0,
+    "warnings": []
+  },
+  "attachments": [],
+  "export": {
+    "csv_path": "",
+    "ics_path": "",
+    "pdf_path": "",
+    "html_path": ""
+  },
+  "last_emailed_at": "",
+  "last_updated": "2025-09-09T17:53:15.408645"
+}
