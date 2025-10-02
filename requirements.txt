@@ -7,3 +7,4 @@ sendgrid==6.10.0
 reportlab
 pillow
 requests
+matplotlib
