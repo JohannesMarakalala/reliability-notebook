@@ -14,44 +14,64 @@ import streamlit as st
 # =========================
 st.set_page_config(page_title="VIGIL", layout="wide")
 
-# =========================
-# Robust Beta Gate (sidebar form, secrets/env fallback)
-# =========================
-def _active_beta_code() -> str:
+# ===== BETA GATE (centered, no-code = auto-unlock) =====
+def _active_beta_code() -> str | None:
+    """Return the configured code, or None if no code is set."""
     try:
         v = (st.secrets.get("BETA_ACCESS_CODE") or "").strip()
     except Exception:
         v = ""
     if not v:
         v = (os.getenv("BETA_ACCESS_CODE") or "").strip()
-    return v or "VIGIL2025"  # safe default if nothing set
+    return v or None  # <— None means: no code configured → auto-unlock
 
 def _beta_bypass() -> bool:
+    """Optional bypass for you during testing."""
     try:
         b = str(st.secrets.get("BETA_BYPASS", "")).strip()
     except Exception:
         b = ""
     if not b:
         b = (os.getenv("BETA_BYPASS") or "").strip()
-    return b in {"1", "true", "True", "YES", "yes"}
+    return b in {"1","true","True","YES","yes"}
 
-if not st.session_state.get("beta_ok"):
-    if _beta_bypass():
+def beta_gate():
+    # Already unlocked?
+    if st.session_state.get("beta_ok"):
+        return
+
+    # If no code configured → auto-unlock (don’t block users by mistake)
+    code_cfg = _active_beta_code()
+    if code_cfg is None or _beta_bypass():
         st.session_state["beta_ok"] = True
-    else:
-        with st.sidebar.form("beta_gate_form", clear_on_submit=False):
-            st.write("🔒 **Beta Access**")
-            _code_in = st.text_input("Enter beta access code", type="password").strip()
-            _go = st.form_submit_button("Unlock")
-        if _go:
-            if _code_in == _active_beta_code():
+        return
+
+    # Centered gate (not in sidebar)
+    with st.container():
+        st.markdown(
+            "<div style='display:flex;justify-content:center;margin-top:8vh'>"
+            "<div style='max-width:520px;width:100%;padding:20px;border:1px solid rgba(0,0,0,0.08);"
+            "border-radius:14px;background:rgba(255,255,255,0.85);box-shadow:0 8px 24px rgba(0,0,0,0.12)'>"
+            "<h3 style='margin:0 0 8px 0'>🔒 VIGIL Beta Access</h3>"
+            "<p style='margin:0 0 14px 0;color:#334155'>Enter your access code to continue.</p>"
+            "</div></div>",
+            unsafe_allow_html=True
+        )
+        code_in = st.text_input("Access code", type="password", key="beta_code_center").strip()
+        go = st.button("Unlock", use_container_width=True)
+        if go:
+            if code_in == code_cfg:
                 st.session_state["beta_ok"] = True
                 st.success("Beta unlocked.")
                 st.experimental_rerun()
             else:
                 st.error("Invalid access code.")
-                st.stop()
         st.stop()
+
+# Call it immediately after page_config:
+beta_gate()
+
+# ===== END BETA GATE =====
 
 # =========================
 # Streamlit compatibility alias
