@@ -1,0 +1,9 @@
+streamlit==1.37.0
+pandas
+numpy
+plotly
+python-dateutil
+sendgrid==6.10.0
+reportlab
+pillow
+requests
